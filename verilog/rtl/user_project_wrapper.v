@@ -76,18 +76,19 @@ module user_project_wrapper #(
 
     // User maskable interrupt signals
     output [2:0] user_irq
+
 );
 
 /*--------------------------------------*/
 /* User project is instantiated  here   */
 /*--------------------------------------*/
 
-user_proj_example mprj (
+Wishbone_VGA_controller Wishbone_VGA_controller (
 `ifdef USE_POWER_PINS
-	.vccd1(vccd1),	// User area 1 1.8V power
+	.vccd1(vccd1),	//  area 1 1.8V power
 	.vssd1(vssd1),	// User area 1 digital ground
 `endif
-
+/*
     .wb_clk_i(wb_clk_i),
     .wb_rst_i(wb_rst_i),
 
@@ -116,6 +117,37 @@ user_proj_example mprj (
 
     // IRQ
     .irq(user_irq)
+    */
+    
+    // mycode
+      .clk(wb_clk_i),             // Connect to Wishbone clock
+  .rst(wb_rst_i),             // Connect to Wishbone reset
+  .cyc(wbs_cyc_i),            // Connect to Wishbone cycle signal
+  .stb(wbs_stb_i),            // Connect to Wishbone strobe signal
+  .we(wbs_we_i),              // Connect to Wishbone write enable signal
+  .adr(wbs_adr_i),       // Connect to Wishbone address signal
+  .dat(wbs_dat_i),            // Connect to Wishbone data input signal
+  .ack(wbs_ack_o),            // Connect to Wishbone acknowledge signal
+  .dout(wbs_dat_o),           // Connect to Wishbone data output signal
+  /*	 output wire n_blank,
+    output wire n_sync,
+    output wire h_sync,
+    output wire v_sync,
+    output wire display_enable,
+    output wire [11:0] row,
+	output wire [11:0] column*/
+	
+	.n_blank(io_out[5]),
+	.n_sync(io_out[6]),
+	.h_sync(io_out[7]),
+	.v_sync(io_out[8]),
+	.display_enable(io_out[9]),
+	.row(io_out[21:10]),
+	.column(io_out[33:22])
+  
+  
+    
+    
 );
 
 endmodule	// user_project_wrapper

@@ -1,0 +1,4408 @@
+*SPEF "ieee 1481-1999"
+*DESIGN "user_project_wrapper"
+*DATE "11:11:11 Fri 11 11, 1111"
+*VENDOR "OpenRCX"
+*PROGRAM "Parallel Extraction"
+*VERSION "1.0"
+*DESIGN_FLOW "NAME_SCOPE LOCAL" "PIN_CAP NONE"
+*DIVIDER /
+*DELIMITER :
+*BUS_DELIMITER []
+*T_UNIT 1 NS
+*C_UNIT 1 PF
+*R_UNIT 1 OHM
+*L_UNIT 1 HENRY
+
+*NAME_MAP
+*1 analog_io[0]
+*2 analog_io[10]
+*3 analog_io[11]
+*4 analog_io[12]
+*5 analog_io[13]
+*6 analog_io[14]
+*7 analog_io[15]
+*8 analog_io[16]
+*9 analog_io[17]
+*10 analog_io[18]
+*11 analog_io[19]
+*12 analog_io[1]
+*13 analog_io[20]
+*14 analog_io[21]
+*15 analog_io[22]
+*16 analog_io[23]
+*17 analog_io[24]
+*18 analog_io[25]
+*19 analog_io[26]
+*20 analog_io[27]
+*21 analog_io[28]
+*22 analog_io[2]
+*23 analog_io[3]
+*24 analog_io[4]
+*25 analog_io[5]
+*26 analog_io[6]
+*27 analog_io[7]
+*28 analog_io[8]
+*29 analog_io[9]
+*30 io_in[0]
+*31 io_in[10]
+*32 io_in[11]
+*33 io_in[12]
+*34 io_in[13]
+*35 io_in[14]
+*36 io_in[15]
+*37 io_in[16]
+*38 io_in[17]
+*39 io_in[18]
+*40 io_in[19]
+*41 io_in[1]
+*42 io_in[20]
+*43 io_in[21]
+*44 io_in[22]
+*45 io_in[23]
+*46 io_in[24]
+*47 io_in[25]
+*48 io_in[26]
+*49 io_in[27]
+*50 io_in[28]
+*51 io_in[29]
+*52 io_in[2]
+*53 io_in[30]
+*54 io_in[31]
+*55 io_in[32]
+*56 io_in[33]
+*57 io_in[34]
+*58 io_in[35]
+*59 io_in[36]
+*60 io_in[37]
+*61 io_in[3]
+*62 io_in[4]
+*63 io_in[5]
+*64 io_in[6]
+*65 io_in[7]
+*66 io_in[8]
+*67 io_in[9]
+*68 io_oeb[0]
+*69 io_oeb[10]
+*70 io_oeb[11]
+*71 io_oeb[12]
+*72 io_oeb[13]
+*73 io_oeb[14]
+*74 io_oeb[15]
+*75 io_oeb[16]
+*76 io_oeb[17]
+*77 io_oeb[18]
+*78 io_oeb[19]
+*79 io_oeb[1]
+*80 io_oeb[20]
+*81 io_oeb[21]
+*82 io_oeb[22]
+*83 io_oeb[23]
+*84 io_oeb[24]
+*85 io_oeb[25]
+*86 io_oeb[26]
+*87 io_oeb[27]
+*88 io_oeb[28]
+*89 io_oeb[29]
+*90 io_oeb[2]
+*91 io_oeb[30]
+*92 io_oeb[31]
+*93 io_oeb[32]
+*94 io_oeb[33]
+*95 io_oeb[34]
+*96 io_oeb[35]
+*97 io_oeb[36]
+*98 io_oeb[37]
+*99 io_oeb[3]
+*100 io_oeb[4]
+*101 io_oeb[5]
+*102 io_oeb[6]
+*103 io_oeb[7]
+*104 io_oeb[8]
+*105 io_oeb[9]
+*106 io_out[0]
+*107 io_out[10]
+*108 io_out[11]
+*109 io_out[12]
+*110 io_out[13]
+*111 io_out[14]
+*112 io_out[15]
+*113 io_out[16]
+*114 io_out[17]
+*115 io_out[18]
+*116 io_out[19]
+*117 io_out[1]
+*118 io_out[20]
+*119 io_out[21]
+*120 io_out[22]
+*121 io_out[23]
+*122 io_out[24]
+*123 io_out[25]
+*124 io_out[26]
+*125 io_out[27]
+*126 io_out[28]
+*127 io_out[29]
+*128 io_out[2]
+*129 io_out[30]
+*130 io_out[31]
+*131 io_out[32]
+*132 io_out[33]
+*133 io_out[34]
+*134 io_out[35]
+*135 io_out[36]
+*136 io_out[37]
+*137 io_out[3]
+*138 io_out[4]
+*139 io_out[5]
+*140 io_out[6]
+*141 io_out[7]
+*142 io_out[8]
+*143 io_out[9]
+*144 la_data_in[0]
+*145 la_data_in[100]
+*146 la_data_in[101]
+*147 la_data_in[102]
+*148 la_data_in[103]
+*149 la_data_in[104]
+*150 la_data_in[105]
+*151 la_data_in[106]
+*152 la_data_in[107]
+*153 la_data_in[108]
+*154 la_data_in[109]
+*155 la_data_in[10]
+*156 la_data_in[110]
+*157 la_data_in[111]
+*158 la_data_in[112]
+*159 la_data_in[113]
+*160 la_data_in[114]
+*161 la_data_in[115]
+*162 la_data_in[116]
+*163 la_data_in[117]
+*164 la_data_in[118]
+*165 la_data_in[119]
+*166 la_data_in[11]
+*167 la_data_in[120]
+*168 la_data_in[121]
+*169 la_data_in[122]
+*170 la_data_in[123]
+*171 la_data_in[124]
+*172 la_data_in[125]
+*173 la_data_in[126]
+*174 la_data_in[127]
+*175 la_data_in[12]
+*176 la_data_in[13]
+*177 la_data_in[14]
+*178 la_data_in[15]
+*179 la_data_in[16]
+*180 la_data_in[17]
+*181 la_data_in[18]
+*182 la_data_in[19]
+*183 la_data_in[1]
+*184 la_data_in[20]
+*185 la_data_in[21]
+*186 la_data_in[22]
+*187 la_data_in[23]
+*188 la_data_in[24]
+*189 la_data_in[25]
+*190 la_data_in[26]
+*191 la_data_in[27]
+*192 la_data_in[28]
+*193 la_data_in[29]
+*194 la_data_in[2]
+*195 la_data_in[30]
+*196 la_data_in[31]
+*197 la_data_in[32]
+*198 la_data_in[33]
+*199 la_data_in[34]
+*200 la_data_in[35]
+*201 la_data_in[36]
+*202 la_data_in[37]
+*203 la_data_in[38]
+*204 la_data_in[39]
+*205 la_data_in[3]
+*206 la_data_in[40]
+*207 la_data_in[41]
+*208 la_data_in[42]
+*209 la_data_in[43]
+*210 la_data_in[44]
+*211 la_data_in[45]
+*212 la_data_in[46]
+*213 la_data_in[47]
+*214 la_data_in[48]
+*215 la_data_in[49]
+*216 la_data_in[4]
+*217 la_data_in[50]
+*218 la_data_in[51]
+*219 la_data_in[52]
+*220 la_data_in[53]
+*221 la_data_in[54]
+*222 la_data_in[55]
+*223 la_data_in[56]
+*224 la_data_in[57]
+*225 la_data_in[58]
+*226 la_data_in[59]
+*227 la_data_in[5]
+*228 la_data_in[60]
+*229 la_data_in[61]
+*230 la_data_in[62]
+*231 la_data_in[63]
+*232 la_data_in[64]
+*233 la_data_in[65]
+*234 la_data_in[66]
+*235 la_data_in[67]
+*236 la_data_in[68]
+*237 la_data_in[69]
+*238 la_data_in[6]
+*239 la_data_in[70]
+*240 la_data_in[71]
+*241 la_data_in[72]
+*242 la_data_in[73]
+*243 la_data_in[74]
+*244 la_data_in[75]
+*245 la_data_in[76]
+*246 la_data_in[77]
+*247 la_data_in[78]
+*248 la_data_in[79]
+*249 la_data_in[7]
+*250 la_data_in[80]
+*251 la_data_in[81]
+*252 la_data_in[82]
+*253 la_data_in[83]
+*254 la_data_in[84]
+*255 la_data_in[85]
+*256 la_data_in[86]
+*257 la_data_in[87]
+*258 la_data_in[88]
+*259 la_data_in[89]
+*260 la_data_in[8]
+*261 la_data_in[90]
+*262 la_data_in[91]
+*263 la_data_in[92]
+*264 la_data_in[93]
+*265 la_data_in[94]
+*266 la_data_in[95]
+*267 la_data_in[96]
+*268 la_data_in[97]
+*269 la_data_in[98]
+*270 la_data_in[99]
+*271 la_data_in[9]
+*272 la_data_out[0]
+*273 la_data_out[100]
+*274 la_data_out[101]
+*275 la_data_out[102]
+*276 la_data_out[103]
+*277 la_data_out[104]
+*278 la_data_out[105]
+*279 la_data_out[106]
+*280 la_data_out[107]
+*281 la_data_out[108]
+*282 la_data_out[109]
+*283 la_data_out[10]
+*284 la_data_out[110]
+*285 la_data_out[111]
+*286 la_data_out[112]
+*287 la_data_out[113]
+*288 la_data_out[114]
+*289 la_data_out[115]
+*290 la_data_out[116]
+*291 la_data_out[117]
+*292 la_data_out[118]
+*293 la_data_out[119]
+*294 la_data_out[11]
+*295 la_data_out[120]
+*296 la_data_out[121]
+*297 la_data_out[122]
+*298 la_data_out[123]
+*299 la_data_out[124]
+*300 la_data_out[125]
+*301 la_data_out[126]
+*302 la_data_out[127]
+*303 la_data_out[12]
+*304 la_data_out[13]
+*305 la_data_out[14]
+*306 la_data_out[15]
+*307 la_data_out[16]
+*308 la_data_out[17]
+*309 la_data_out[18]
+*310 la_data_out[19]
+*311 la_data_out[1]
+*312 la_data_out[20]
+*313 la_data_out[21]
+*314 la_data_out[22]
+*315 la_data_out[23]
+*316 la_data_out[24]
+*317 la_data_out[25]
+*318 la_data_out[26]
+*319 la_data_out[27]
+*320 la_data_out[28]
+*321 la_data_out[29]
+*322 la_data_out[2]
+*323 la_data_out[30]
+*324 la_data_out[31]
+*325 la_data_out[32]
+*326 la_data_out[33]
+*327 la_data_out[34]
+*328 la_data_out[35]
+*329 la_data_out[36]
+*330 la_data_out[37]
+*331 la_data_out[38]
+*332 la_data_out[39]
+*333 la_data_out[3]
+*334 la_data_out[40]
+*335 la_data_out[41]
+*336 la_data_out[42]
+*337 la_data_out[43]
+*338 la_data_out[44]
+*339 la_data_out[45]
+*340 la_data_out[46]
+*341 la_data_out[47]
+*342 la_data_out[48]
+*343 la_data_out[49]
+*344 la_data_out[4]
+*345 la_data_out[50]
+*346 la_data_out[51]
+*347 la_data_out[52]
+*348 la_data_out[53]
+*349 la_data_out[54]
+*350 la_data_out[55]
+*351 la_data_out[56]
+*352 la_data_out[57]
+*353 la_data_out[58]
+*354 la_data_out[59]
+*355 la_data_out[5]
+*356 la_data_out[60]
+*357 la_data_out[61]
+*358 la_data_out[62]
+*359 la_data_out[63]
+*360 la_data_out[64]
+*361 la_data_out[65]
+*362 la_data_out[66]
+*363 la_data_out[67]
+*364 la_data_out[68]
+*365 la_data_out[69]
+*366 la_data_out[6]
+*367 la_data_out[70]
+*368 la_data_out[71]
+*369 la_data_out[72]
+*370 la_data_out[73]
+*371 la_data_out[74]
+*372 la_data_out[75]
+*373 la_data_out[76]
+*374 la_data_out[77]
+*375 la_data_out[78]
+*376 la_data_out[79]
+*377 la_data_out[7]
+*378 la_data_out[80]
+*379 la_data_out[81]
+*380 la_data_out[82]
+*381 la_data_out[83]
+*382 la_data_out[84]
+*383 la_data_out[85]
+*384 la_data_out[86]
+*385 la_data_out[87]
+*386 la_data_out[88]
+*387 la_data_out[89]
+*388 la_data_out[8]
+*389 la_data_out[90]
+*390 la_data_out[91]
+*391 la_data_out[92]
+*392 la_data_out[93]
+*393 la_data_out[94]
+*394 la_data_out[95]
+*395 la_data_out[96]
+*396 la_data_out[97]
+*397 la_data_out[98]
+*398 la_data_out[99]
+*399 la_data_out[9]
+*400 la_oenb[0]
+*401 la_oenb[100]
+*402 la_oenb[101]
+*403 la_oenb[102]
+*404 la_oenb[103]
+*405 la_oenb[104]
+*406 la_oenb[105]
+*407 la_oenb[106]
+*408 la_oenb[107]
+*409 la_oenb[108]
+*410 la_oenb[109]
+*411 la_oenb[10]
+*412 la_oenb[110]
+*413 la_oenb[111]
+*414 la_oenb[112]
+*415 la_oenb[113]
+*416 la_oenb[114]
+*417 la_oenb[115]
+*418 la_oenb[116]
+*419 la_oenb[117]
+*420 la_oenb[118]
+*421 la_oenb[119]
+*422 la_oenb[11]
+*423 la_oenb[120]
+*424 la_oenb[121]
+*425 la_oenb[122]
+*426 la_oenb[123]
+*427 la_oenb[124]
+*428 la_oenb[125]
+*429 la_oenb[126]
+*430 la_oenb[127]
+*431 la_oenb[12]
+*432 la_oenb[13]
+*433 la_oenb[14]
+*434 la_oenb[15]
+*435 la_oenb[16]
+*436 la_oenb[17]
+*437 la_oenb[18]
+*438 la_oenb[19]
+*439 la_oenb[1]
+*440 la_oenb[20]
+*441 la_oenb[21]
+*442 la_oenb[22]
+*443 la_oenb[23]
+*444 la_oenb[24]
+*445 la_oenb[25]
+*446 la_oenb[26]
+*447 la_oenb[27]
+*448 la_oenb[28]
+*449 la_oenb[29]
+*450 la_oenb[2]
+*451 la_oenb[30]
+*452 la_oenb[31]
+*453 la_oenb[32]
+*454 la_oenb[33]
+*455 la_oenb[34]
+*456 la_oenb[35]
+*457 la_oenb[36]
+*458 la_oenb[37]
+*459 la_oenb[38]
+*460 la_oenb[39]
+*461 la_oenb[3]
+*462 la_oenb[40]
+*463 la_oenb[41]
+*464 la_oenb[42]
+*465 la_oenb[43]
+*466 la_oenb[44]
+*467 la_oenb[45]
+*468 la_oenb[46]
+*469 la_oenb[47]
+*470 la_oenb[48]
+*471 la_oenb[49]
+*472 la_oenb[4]
+*473 la_oenb[50]
+*474 la_oenb[51]
+*475 la_oenb[52]
+*476 la_oenb[53]
+*477 la_oenb[54]
+*478 la_oenb[55]
+*479 la_oenb[56]
+*480 la_oenb[57]
+*481 la_oenb[58]
+*482 la_oenb[59]
+*483 la_oenb[5]
+*484 la_oenb[60]
+*485 la_oenb[61]
+*486 la_oenb[62]
+*487 la_oenb[63]
+*488 la_oenb[64]
+*489 la_oenb[65]
+*490 la_oenb[66]
+*491 la_oenb[67]
+*492 la_oenb[68]
+*493 la_oenb[69]
+*494 la_oenb[6]
+*495 la_oenb[70]
+*496 la_oenb[71]
+*497 la_oenb[72]
+*498 la_oenb[73]
+*499 la_oenb[74]
+*500 la_oenb[75]
+*501 la_oenb[76]
+*502 la_oenb[77]
+*503 la_oenb[78]
+*504 la_oenb[79]
+*505 la_oenb[7]
+*506 la_oenb[80]
+*507 la_oenb[81]
+*508 la_oenb[82]
+*509 la_oenb[83]
+*510 la_oenb[84]
+*511 la_oenb[85]
+*512 la_oenb[86]
+*513 la_oenb[87]
+*514 la_oenb[88]
+*515 la_oenb[89]
+*516 la_oenb[8]
+*517 la_oenb[90]
+*518 la_oenb[91]
+*519 la_oenb[92]
+*520 la_oenb[93]
+*521 la_oenb[94]
+*522 la_oenb[95]
+*523 la_oenb[96]
+*524 la_oenb[97]
+*525 la_oenb[98]
+*526 la_oenb[99]
+*527 la_oenb[9]
+*528 user_clock2
+*529 user_irq[0]
+*530 user_irq[1]
+*531 user_irq[2]
+*540 wb_clk_i
+*541 wb_rst_i
+*542 wbs_ack_o
+*543 wbs_adr_i[0]
+*544 wbs_adr_i[10]
+*545 wbs_adr_i[11]
+*546 wbs_adr_i[12]
+*547 wbs_adr_i[13]
+*548 wbs_adr_i[14]
+*549 wbs_adr_i[15]
+*550 wbs_adr_i[16]
+*551 wbs_adr_i[17]
+*552 wbs_adr_i[18]
+*553 wbs_adr_i[19]
+*554 wbs_adr_i[1]
+*555 wbs_adr_i[20]
+*556 wbs_adr_i[21]
+*557 wbs_adr_i[22]
+*558 wbs_adr_i[23]
+*559 wbs_adr_i[24]
+*560 wbs_adr_i[25]
+*561 wbs_adr_i[26]
+*562 wbs_adr_i[27]
+*563 wbs_adr_i[28]
+*564 wbs_adr_i[29]
+*565 wbs_adr_i[2]
+*566 wbs_adr_i[30]
+*567 wbs_adr_i[31]
+*568 wbs_adr_i[3]
+*569 wbs_adr_i[4]
+*570 wbs_adr_i[5]
+*571 wbs_adr_i[6]
+*572 wbs_adr_i[7]
+*573 wbs_adr_i[8]
+*574 wbs_adr_i[9]
+*575 wbs_cyc_i
+*576 wbs_dat_i[0]
+*577 wbs_dat_i[10]
+*578 wbs_dat_i[11]
+*579 wbs_dat_i[12]
+*580 wbs_dat_i[13]
+*581 wbs_dat_i[14]
+*582 wbs_dat_i[15]
+*583 wbs_dat_i[16]
+*584 wbs_dat_i[17]
+*585 wbs_dat_i[18]
+*586 wbs_dat_i[19]
+*587 wbs_dat_i[1]
+*588 wbs_dat_i[20]
+*589 wbs_dat_i[21]
+*590 wbs_dat_i[22]
+*591 wbs_dat_i[23]
+*592 wbs_dat_i[24]
+*593 wbs_dat_i[25]
+*594 wbs_dat_i[26]
+*595 wbs_dat_i[27]
+*596 wbs_dat_i[28]
+*597 wbs_dat_i[29]
+*598 wbs_dat_i[2]
+*599 wbs_dat_i[30]
+*600 wbs_dat_i[31]
+*601 wbs_dat_i[3]
+*602 wbs_dat_i[4]
+*603 wbs_dat_i[5]
+*604 wbs_dat_i[6]
+*605 wbs_dat_i[7]
+*606 wbs_dat_i[8]
+*607 wbs_dat_i[9]
+*608 wbs_dat_o[0]
+*609 wbs_dat_o[10]
+*610 wbs_dat_o[11]
+*611 wbs_dat_o[12]
+*612 wbs_dat_o[13]
+*613 wbs_dat_o[14]
+*614 wbs_dat_o[15]
+*615 wbs_dat_o[16]
+*616 wbs_dat_o[17]
+*617 wbs_dat_o[18]
+*618 wbs_dat_o[19]
+*619 wbs_dat_o[1]
+*620 wbs_dat_o[20]
+*621 wbs_dat_o[21]
+*622 wbs_dat_o[22]
+*623 wbs_dat_o[23]
+*624 wbs_dat_o[24]
+*625 wbs_dat_o[25]
+*626 wbs_dat_o[26]
+*627 wbs_dat_o[27]
+*628 wbs_dat_o[28]
+*629 wbs_dat_o[29]
+*630 wbs_dat_o[2]
+*631 wbs_dat_o[30]
+*632 wbs_dat_o[31]
+*633 wbs_dat_o[3]
+*634 wbs_dat_o[4]
+*635 wbs_dat_o[5]
+*636 wbs_dat_o[6]
+*637 wbs_dat_o[7]
+*638 wbs_dat_o[8]
+*639 wbs_dat_o[9]
+*640 wbs_sel_i[0]
+*641 wbs_sel_i[1]
+*642 wbs_sel_i[2]
+*643 wbs_sel_i[3]
+*644 wbs_stb_i
+*645 wbs_we_i
+*646 Wishbone_VGA_controller
+
+*PORTS
+analog_io[0] I
+analog_io[10] I
+analog_io[11] I
+analog_io[12] I
+analog_io[13] I
+analog_io[14] I
+analog_io[15] I
+analog_io[16] I
+analog_io[17] I
+analog_io[18] I
+analog_io[19] I
+analog_io[1] I
+analog_io[20] I
+analog_io[21] I
+analog_io[22] I
+analog_io[23] I
+analog_io[24] I
+analog_io[25] I
+analog_io[26] I
+analog_io[27] I
+analog_io[28] I
+analog_io[2] I
+analog_io[3] I
+analog_io[4] I
+analog_io[5] I
+analog_io[6] I
+analog_io[7] I
+analog_io[8] I
+analog_io[9] I
+io_in[0] I
+io_in[10] I
+io_in[11] I
+io_in[12] I
+io_in[13] I
+io_in[14] I
+io_in[15] I
+io_in[16] I
+io_in[17] I
+io_in[18] I
+io_in[19] I
+io_in[1] I
+io_in[20] I
+io_in[21] I
+io_in[22] I
+io_in[23] I
+io_in[24] I
+io_in[25] I
+io_in[26] I
+io_in[27] I
+io_in[28] I
+io_in[29] I
+io_in[2] I
+io_in[30] I
+io_in[31] I
+io_in[32] I
+io_in[33] I
+io_in[34] I
+io_in[35] I
+io_in[36] I
+io_in[37] I
+io_in[3] I
+io_in[4] I
+io_in[5] I
+io_in[6] I
+io_in[7] I
+io_in[8] I
+io_in[9] I
+io_oeb[0] O
+io_oeb[10] O
+io_oeb[11] O
+io_oeb[12] O
+io_oeb[13] O
+io_oeb[14] O
+io_oeb[15] O
+io_oeb[16] O
+io_oeb[17] O
+io_oeb[18] O
+io_oeb[19] O
+io_oeb[1] O
+io_oeb[20] O
+io_oeb[21] O
+io_oeb[22] O
+io_oeb[23] O
+io_oeb[24] O
+io_oeb[25] O
+io_oeb[26] O
+io_oeb[27] O
+io_oeb[28] O
+io_oeb[29] O
+io_oeb[2] O
+io_oeb[30] O
+io_oeb[31] O
+io_oeb[32] O
+io_oeb[33] O
+io_oeb[34] O
+io_oeb[35] O
+io_oeb[36] O
+io_oeb[37] O
+io_oeb[3] O
+io_oeb[4] O
+io_oeb[5] O
+io_oeb[6] O
+io_oeb[7] O
+io_oeb[8] O
+io_oeb[9] O
+io_out[0] O
+io_out[10] O
+io_out[11] O
+io_out[12] O
+io_out[13] O
+io_out[14] O
+io_out[15] O
+io_out[16] O
+io_out[17] O
+io_out[18] O
+io_out[19] O
+io_out[1] O
+io_out[20] O
+io_out[21] O
+io_out[22] O
+io_out[23] O
+io_out[24] O
+io_out[25] O
+io_out[26] O
+io_out[27] O
+io_out[28] O
+io_out[29] O
+io_out[2] O
+io_out[30] O
+io_out[31] O
+io_out[32] O
+io_out[33] O
+io_out[34] O
+io_out[35] O
+io_out[36] O
+io_out[37] O
+io_out[3] O
+io_out[4] O
+io_out[5] O
+io_out[6] O
+io_out[7] O
+io_out[8] O
+io_out[9] O
+la_data_in[0] I
+la_data_in[100] I
+la_data_in[101] I
+la_data_in[102] I
+la_data_in[103] I
+la_data_in[104] I
+la_data_in[105] I
+la_data_in[106] I
+la_data_in[107] I
+la_data_in[108] I
+la_data_in[109] I
+la_data_in[10] I
+la_data_in[110] I
+la_data_in[111] I
+la_data_in[112] I
+la_data_in[113] I
+la_data_in[114] I
+la_data_in[115] I
+la_data_in[116] I
+la_data_in[117] I
+la_data_in[118] I
+la_data_in[119] I
+la_data_in[11] I
+la_data_in[120] I
+la_data_in[121] I
+la_data_in[122] I
+la_data_in[123] I
+la_data_in[124] I
+la_data_in[125] I
+la_data_in[126] I
+la_data_in[127] I
+la_data_in[12] I
+la_data_in[13] I
+la_data_in[14] I
+la_data_in[15] I
+la_data_in[16] I
+la_data_in[17] I
+la_data_in[18] I
+la_data_in[19] I
+la_data_in[1] I
+la_data_in[20] I
+la_data_in[21] I
+la_data_in[22] I
+la_data_in[23] I
+la_data_in[24] I
+la_data_in[25] I
+la_data_in[26] I
+la_data_in[27] I
+la_data_in[28] I
+la_data_in[29] I
+la_data_in[2] I
+la_data_in[30] I
+la_data_in[31] I
+la_data_in[32] I
+la_data_in[33] I
+la_data_in[34] I
+la_data_in[35] I
+la_data_in[36] I
+la_data_in[37] I
+la_data_in[38] I
+la_data_in[39] I
+la_data_in[3] I
+la_data_in[40] I
+la_data_in[41] I
+la_data_in[42] I
+la_data_in[43] I
+la_data_in[44] I
+la_data_in[45] I
+la_data_in[46] I
+la_data_in[47] I
+la_data_in[48] I
+la_data_in[49] I
+la_data_in[4] I
+la_data_in[50] I
+la_data_in[51] I
+la_data_in[52] I
+la_data_in[53] I
+la_data_in[54] I
+la_data_in[55] I
+la_data_in[56] I
+la_data_in[57] I
+la_data_in[58] I
+la_data_in[59] I
+la_data_in[5] I
+la_data_in[60] I
+la_data_in[61] I
+la_data_in[62] I
+la_data_in[63] I
+la_data_in[64] I
+la_data_in[65] I
+la_data_in[66] I
+la_data_in[67] I
+la_data_in[68] I
+la_data_in[69] I
+la_data_in[6] I
+la_data_in[70] I
+la_data_in[71] I
+la_data_in[72] I
+la_data_in[73] I
+la_data_in[74] I
+la_data_in[75] I
+la_data_in[76] I
+la_data_in[77] I
+la_data_in[78] I
+la_data_in[79] I
+la_data_in[7] I
+la_data_in[80] I
+la_data_in[81] I
+la_data_in[82] I
+la_data_in[83] I
+la_data_in[84] I
+la_data_in[85] I
+la_data_in[86] I
+la_data_in[87] I
+la_data_in[88] I
+la_data_in[89] I
+la_data_in[8] I
+la_data_in[90] I
+la_data_in[91] I
+la_data_in[92] I
+la_data_in[93] I
+la_data_in[94] I
+la_data_in[95] I
+la_data_in[96] I
+la_data_in[97] I
+la_data_in[98] I
+la_data_in[99] I
+la_data_in[9] I
+la_data_out[0] O
+la_data_out[100] O
+la_data_out[101] O
+la_data_out[102] O
+la_data_out[103] O
+la_data_out[104] O
+la_data_out[105] O
+la_data_out[106] O
+la_data_out[107] O
+la_data_out[108] O
+la_data_out[109] O
+la_data_out[10] O
+la_data_out[110] O
+la_data_out[111] O
+la_data_out[112] O
+la_data_out[113] O
+la_data_out[114] O
+la_data_out[115] O
+la_data_out[116] O
+la_data_out[117] O
+la_data_out[118] O
+la_data_out[119] O
+la_data_out[11] O
+la_data_out[120] O
+la_data_out[121] O
+la_data_out[122] O
+la_data_out[123] O
+la_data_out[124] O
+la_data_out[125] O
+la_data_out[126] O
+la_data_out[127] O
+la_data_out[12] O
+la_data_out[13] O
+la_data_out[14] O
+la_data_out[15] O
+la_data_out[16] O
+la_data_out[17] O
+la_data_out[18] O
+la_data_out[19] O
+la_data_out[1] O
+la_data_out[20] O
+la_data_out[21] O
+la_data_out[22] O
+la_data_out[23] O
+la_data_out[24] O
+la_data_out[25] O
+la_data_out[26] O
+la_data_out[27] O
+la_data_out[28] O
+la_data_out[29] O
+la_data_out[2] O
+la_data_out[30] O
+la_data_out[31] O
+la_data_out[32] O
+la_data_out[33] O
+la_data_out[34] O
+la_data_out[35] O
+la_data_out[36] O
+la_data_out[37] O
+la_data_out[38] O
+la_data_out[39] O
+la_data_out[3] O
+la_data_out[40] O
+la_data_out[41] O
+la_data_out[42] O
+la_data_out[43] O
+la_data_out[44] O
+la_data_out[45] O
+la_data_out[46] O
+la_data_out[47] O
+la_data_out[48] O
+la_data_out[49] O
+la_data_out[4] O
+la_data_out[50] O
+la_data_out[51] O
+la_data_out[52] O
+la_data_out[53] O
+la_data_out[54] O
+la_data_out[55] O
+la_data_out[56] O
+la_data_out[57] O
+la_data_out[58] O
+la_data_out[59] O
+la_data_out[5] O
+la_data_out[60] O
+la_data_out[61] O
+la_data_out[62] O
+la_data_out[63] O
+la_data_out[64] O
+la_data_out[65] O
+la_data_out[66] O
+la_data_out[67] O
+la_data_out[68] O
+la_data_out[69] O
+la_data_out[6] O
+la_data_out[70] O
+la_data_out[71] O
+la_data_out[72] O
+la_data_out[73] O
+la_data_out[74] O
+la_data_out[75] O
+la_data_out[76] O
+la_data_out[77] O
+la_data_out[78] O
+la_data_out[79] O
+la_data_out[7] O
+la_data_out[80] O
+la_data_out[81] O
+la_data_out[82] O
+la_data_out[83] O
+la_data_out[84] O
+la_data_out[85] O
+la_data_out[86] O
+la_data_out[87] O
+la_data_out[88] O
+la_data_out[89] O
+la_data_out[8] O
+la_data_out[90] O
+la_data_out[91] O
+la_data_out[92] O
+la_data_out[93] O
+la_data_out[94] O
+la_data_out[95] O
+la_data_out[96] O
+la_data_out[97] O
+la_data_out[98] O
+la_data_out[99] O
+la_data_out[9] O
+la_oenb[0] I
+la_oenb[100] I
+la_oenb[101] I
+la_oenb[102] I
+la_oenb[103] I
+la_oenb[104] I
+la_oenb[105] I
+la_oenb[106] I
+la_oenb[107] I
+la_oenb[108] I
+la_oenb[109] I
+la_oenb[10] I
+la_oenb[110] I
+la_oenb[111] I
+la_oenb[112] I
+la_oenb[113] I
+la_oenb[114] I
+la_oenb[115] I
+la_oenb[116] I
+la_oenb[117] I
+la_oenb[118] I
+la_oenb[119] I
+la_oenb[11] I
+la_oenb[120] I
+la_oenb[121] I
+la_oenb[122] I
+la_oenb[123] I
+la_oenb[124] I
+la_oenb[125] I
+la_oenb[126] I
+la_oenb[127] I
+la_oenb[12] I
+la_oenb[13] I
+la_oenb[14] I
+la_oenb[15] I
+la_oenb[16] I
+la_oenb[17] I
+la_oenb[18] I
+la_oenb[19] I
+la_oenb[1] I
+la_oenb[20] I
+la_oenb[21] I
+la_oenb[22] I
+la_oenb[23] I
+la_oenb[24] I
+la_oenb[25] I
+la_oenb[26] I
+la_oenb[27] I
+la_oenb[28] I
+la_oenb[29] I
+la_oenb[2] I
+la_oenb[30] I
+la_oenb[31] I
+la_oenb[32] I
+la_oenb[33] I
+la_oenb[34] I
+la_oenb[35] I
+la_oenb[36] I
+la_oenb[37] I
+la_oenb[38] I
+la_oenb[39] I
+la_oenb[3] I
+la_oenb[40] I
+la_oenb[41] I
+la_oenb[42] I
+la_oenb[43] I
+la_oenb[44] I
+la_oenb[45] I
+la_oenb[46] I
+la_oenb[47] I
+la_oenb[48] I
+la_oenb[49] I
+la_oenb[4] I
+la_oenb[50] I
+la_oenb[51] I
+la_oenb[52] I
+la_oenb[53] I
+la_oenb[54] I
+la_oenb[55] I
+la_oenb[56] I
+la_oenb[57] I
+la_oenb[58] I
+la_oenb[59] I
+la_oenb[5] I
+la_oenb[60] I
+la_oenb[61] I
+la_oenb[62] I
+la_oenb[63] I
+la_oenb[64] I
+la_oenb[65] I
+la_oenb[66] I
+la_oenb[67] I
+la_oenb[68] I
+la_oenb[69] I
+la_oenb[6] I
+la_oenb[70] I
+la_oenb[71] I
+la_oenb[72] I
+la_oenb[73] I
+la_oenb[74] I
+la_oenb[75] I
+la_oenb[76] I
+la_oenb[77] I
+la_oenb[78] I
+la_oenb[79] I
+la_oenb[7] I
+la_oenb[80] I
+la_oenb[81] I
+la_oenb[82] I
+la_oenb[83] I
+la_oenb[84] I
+la_oenb[85] I
+la_oenb[86] I
+la_oenb[87] I
+la_oenb[88] I
+la_oenb[89] I
+la_oenb[8] I
+la_oenb[90] I
+la_oenb[91] I
+la_oenb[92] I
+la_oenb[93] I
+la_oenb[94] I
+la_oenb[95] I
+la_oenb[96] I
+la_oenb[97] I
+la_oenb[98] I
+la_oenb[99] I
+la_oenb[9] I
+user_clock2 I
+user_irq[0] O
+user_irq[1] O
+user_irq[2] O
+wb_clk_i I
+wb_rst_i I
+wbs_ack_o O
+wbs_adr_i[0] I
+wbs_adr_i[10] I
+wbs_adr_i[11] I
+wbs_adr_i[12] I
+wbs_adr_i[13] I
+wbs_adr_i[14] I
+wbs_adr_i[15] I
+wbs_adr_i[16] I
+wbs_adr_i[17] I
+wbs_adr_i[18] I
+wbs_adr_i[19] I
+wbs_adr_i[1] I
+wbs_adr_i[20] I
+wbs_adr_i[21] I
+wbs_adr_i[22] I
+wbs_adr_i[23] I
+wbs_adr_i[24] I
+wbs_adr_i[25] I
+wbs_adr_i[26] I
+wbs_adr_i[27] I
+wbs_adr_i[28] I
+wbs_adr_i[29] I
+wbs_adr_i[2] I
+wbs_adr_i[30] I
+wbs_adr_i[31] I
+wbs_adr_i[3] I
+wbs_adr_i[4] I
+wbs_adr_i[5] I
+wbs_adr_i[6] I
+wbs_adr_i[7] I
+wbs_adr_i[8] I
+wbs_adr_i[9] I
+wbs_cyc_i I
+wbs_dat_i[0] I
+wbs_dat_i[10] I
+wbs_dat_i[11] I
+wbs_dat_i[12] I
+wbs_dat_i[13] I
+wbs_dat_i[14] I
+wbs_dat_i[15] I
+wbs_dat_i[16] I
+wbs_dat_i[17] I
+wbs_dat_i[18] I
+wbs_dat_i[19] I
+wbs_dat_i[1] I
+wbs_dat_i[20] I
+wbs_dat_i[21] I
+wbs_dat_i[22] I
+wbs_dat_i[23] I
+wbs_dat_i[24] I
+wbs_dat_i[25] I
+wbs_dat_i[26] I
+wbs_dat_i[27] I
+wbs_dat_i[28] I
+wbs_dat_i[29] I
+wbs_dat_i[2] I
+wbs_dat_i[30] I
+wbs_dat_i[31] I
+wbs_dat_i[3] I
+wbs_dat_i[4] I
+wbs_dat_i[5] I
+wbs_dat_i[6] I
+wbs_dat_i[7] I
+wbs_dat_i[8] I
+wbs_dat_i[9] I
+wbs_dat_o[0] O
+wbs_dat_o[10] O
+wbs_dat_o[11] O
+wbs_dat_o[12] O
+wbs_dat_o[13] O
+wbs_dat_o[14] O
+wbs_dat_o[15] O
+wbs_dat_o[16] O
+wbs_dat_o[17] O
+wbs_dat_o[18] O
+wbs_dat_o[19] O
+wbs_dat_o[1] O
+wbs_dat_o[20] O
+wbs_dat_o[21] O
+wbs_dat_o[22] O
+wbs_dat_o[23] O
+wbs_dat_o[24] O
+wbs_dat_o[25] O
+wbs_dat_o[26] O
+wbs_dat_o[27] O
+wbs_dat_o[28] O
+wbs_dat_o[29] O
+wbs_dat_o[2] O
+wbs_dat_o[30] O
+wbs_dat_o[31] O
+wbs_dat_o[3] O
+wbs_dat_o[4] O
+wbs_dat_o[5] O
+wbs_dat_o[6] O
+wbs_dat_o[7] O
+wbs_dat_o[8] O
+wbs_dat_o[9] O
+wbs_sel_i[0] I
+wbs_sel_i[1] I
+wbs_sel_i[2] I
+wbs_sel_i[3] I
+wbs_stb_i I
+wbs_we_i I
+
+*D_NET *107 0.388531
+*CONN
+*P io_out[10] O
+*I *646:row[0] O *D Wishbone_VGA_controller
+*CAP
+1 io_out[10] 0.00100203
+2 *646:row[0] 0.000154627
+3 *107:19 0.00301475
+4 *107:13 0.0650715
+5 *107:12 0.0630587
+6 *107:10 0.0147716
+7 *107:9 0.0149263
+8 *107:10 *108:10 0.0461705
+9 *107:10 *111:10 0
+10 *107:10 *139:10 0.011571
+11 *107:13 *111:13 0.16879
+*RES
+1 *646:row[0] *107:9 7.49107 
+2 *107:9 *107:10 455.607 
+3 *107:10 *107:12 4.5 
+4 *107:12 *107:13 2070.48 
+5 *107:13 *107:19 48.3661 
+6 *107:19 io_out[10] 6.20807 
+*END
+
+*D_NET *108 0.343359
+*CONN
+*P io_out[11] O
+*I *646:row[1] O *D Wishbone_VGA_controller
+*CAP
+1 io_out[11] 0.00254782
+2 *646:row[1] 0.000172722
+3 *108:13 0.11469
+4 *108:12 0.112142
+5 *108:10 0.00612002
+6 *108:9 0.00629274
+7 *108:10 *109:10 0.0447822
+8 *108:10 *139:10 0.0104417
+9 *107:10 *108:10 0.0461705
+*RES
+1 *646:row[1] *108:9 7.79464 
+2 *108:9 *108:10 442.464 
+3 *108:10 *108:12 4.5 
+4 *108:12 *108:13 2311.21 
+5 *108:13 io_out[11] 45.8586 
+*END
+
+*D_NET *109 0.363307
+*CONN
+*P io_out[12] O
+*I *646:row[2] O *D Wishbone_VGA_controller
+*CAP
+1 io_out[12] 0.0023812
+2 *646:row[2] 0.000195529
+3 *109:13 0.125905
+4 *109:12 0.123524
+5 *109:10 0.00596485
+6 *109:9 0.00616038
+7 *109:10 *110:10 0.043438
+8 *109:10 *140:10 0.0109547
+9 *108:10 *109:10 0.0447822
+*RES
+1 *646:row[2] *109:9 8.09821 
+2 *109:9 *109:10 429.732 
+3 *109:10 *109:12 4.5 
+4 *109:12 *109:13 2545.57 
+5 *109:13 io_out[12] 43.0371 
+*END
+
+*D_NET *110 0.363606
+*CONN
+*P io_out[13] O
+*I *646:row[3] O *D Wishbone_VGA_controller
+*CAP
+1 io_out[13] 0.00193373
+2 *646:row[3] 0.000220519
+3 *110:13 0.137123
+4 *110:12 0.135189
+5 *110:10 0.0132884
+6 *110:9 0.013509
+7 *110:10 *140:10 0.0189045
+8 *109:10 *110:10 0.043438
+*RES
+1 *646:row[3] *110:9 8.40179 
+2 *110:9 *110:10 417 
+3 *110:10 *110:12 4.5 
+4 *110:12 *110:13 2786 
+5 *110:13 io_out[13] 34.1443 
+*END
+
+*D_NET *111 0.431078
+*CONN
+*P io_out[14] O
+*I *646:row[4] O *D Wishbone_VGA_controller
+*CAP
+1 io_out[14] 0.00090093
+2 *646:row[4] 8.90624e-05
+3 *111:19 0.0030002
+4 *111:13 0.111055
+5 *111:12 0.108956
+6 *111:10 0.019099
+7 *111:9 0.0191881
+8 *107:10 *111:10 0
+9 *107:13 *111:13 0.16879
+*RES
+1 *646:row[4] *111:9 6.27679 
+2 *111:9 *111:10 379.625 
+3 *111:10 *111:12 4.5 
+4 *111:12 *111:13 3016.71 
+5 *111:13 *111:19 48.9911 
+6 *111:19 io_out[14] 6.06393 
+*END
+
+*D_NET *112 0.376195
+*CONN
+*P io_out[15] O
+*I *646:row[5] O *D Wishbone_VGA_controller
+*CAP
+1 io_out[15] 0.000631798
+2 *646:row[5] 9.02585e-05
+3 *112:13 0.0113553
+4 *112:8 0.180463
+5 *112:7 0.16983
+6 *112:13 *119:16 0.0121487
+7 *112:13 *120:16 0.00119604
+8 *112:13 *121:16 0.000479953
+*RES
+1 *646:row[5] *112:7 7.0832 
+2 *112:7 *112:8 542.941 
+3 *112:8 *112:13 47.8369 
+4 *112:13 io_out[15] 12.8125 
+*END
+
+*D_NET *113 0.33143
+*CONN
+*P io_out[16] O
+*I *646:row[6] O *D Wishbone_VGA_controller
+*CAP
+1 io_out[16] 0.00075087
+2 *646:row[6] 0.000320639
+3 *113:22 0.0026133
+4 *113:17 0.0760358
+5 *113:16 0.0761322
+6 *113:11 0.0877786
+7 *113:10 0.0861404
+8 *113:10 *139:10 5.62247e-05
+9 *113:16 *115:14 0
+10 *113:22 *121:16 0.00160207
+*RES
+1 *646:row[6] *113:10 8.9075 
+2 *113:10 *113:11 274.69 
+3 *113:11 *113:16 12.8846 
+4 *113:16 *113:17 1528.15 
+5 *113:17 *113:22 44.4464 
+6 *113:22 io_out[16] 14.7857 
+*END
+
+*D_NET *114 0.384204
+*CONN
+*P io_out[17] O
+*I *646:row[7] O *D Wishbone_VGA_controller
+*CAP
+1 io_out[17] 0.00075087
+2 *646:row[7] 0.000370332
+3 *114:20 0.00389988
+4 *114:19 0.00314901
+5 *114:17 0.0140731
+6 *114:16 0.0140731
+7 *114:14 0.0184234
+8 *114:13 0.0184234
+9 *114:11 0.153934
+10 *114:10 0.154304
+11 *114:10 *139:10 7.00185e-05
+12 *114:20 *121:16 0.00273298
+*RES
+1 *646:row[7] *114:10 9.05163 
+2 *114:10 *114:11 492.018 
+3 *114:11 *114:13 3.41 
+4 *114:13 *114:14 55.7185 
+5 *114:14 *114:16 3.41 
+6 *114:16 *114:17 289.58 
+7 *114:17 *114:19 4.5 
+8 *114:19 *114:20 60.0893 
+9 *114:20 io_out[17] 19.2857 
+*END
+
+*D_NET *115 0.401358
+*CONN
+*P io_out[18] O
+*I *646:row[8] O *D Wishbone_VGA_controller
+*CAP
+1 io_out[18] 0.00145209
+2 *646:row[8] 0.000370332
+3 *115:17 0.0752055
+4 *115:16 0.0737534
+5 *115:14 0.0389529
+6 *115:13 0.0389529
+7 *115:11 0.0861152
+8 *115:10 0.0864856
+9 *115:10 *139:10 7.00185e-05
+10 *113:16 *115:14 0
+*RES
+1 *646:row[8] *115:10 9.05163 
+2 *115:10 *115:11 275.755 
+3 *115:11 *115:13 3.41 
+4 *115:13 *115:14 118.489 
+5 *115:14 *115:16 3.41 
+6 *115:16 *115:17 1519.96 
+7 *115:17 io_out[18] 36.7143 
+*END
+
+*D_NET *116 0.646678
+*CONN
+*P io_out[19] O
+*I *646:row[9] O *D Wishbone_VGA_controller
+*CAP
+1 io_out[19] 0.000958646
+2 *646:row[9] 0.0006388
+3 *116:13 0.171223
+4 *116:12 0.170264
+5 *116:10 0.0157002
+6 *116:9 0.016339
+7 io_out[19] *121:16 4.67786e-05
+8 *116:10 *122:10 0.112332
+9 *116:10 *125:10 0.112339
+10 *116:10 *126:10 0.0225356
+11 *116:10 *127:10 0.0243006
+*RES
+1 *646:row[9] *116:9 14.1421 
+2 *116:9 *116:10 174.989 
+3 *116:10 *116:12 3.41 
+4 *116:12 *116:13 544.219 
+5 *116:13 io_out[19] 24.1817 
+*END
+
+*D_NET *118 0.473095
+*CONN
+*P io_out[20] O
+*I *646:row[10] O *D Wishbone_VGA_controller
+*CAP
+1 io_out[20] 0.00116273
+2 *646:row[10] 9.90957e-05
+3 *118:17 0.0745516
+4 *118:16 0.0733888
+5 *118:14 0.0754526
+6 *118:13 0.0754526
+7 *118:11 0.0864403
+8 *118:10 0.0865394
+9 *118:10 *139:10 7.94642e-06
+*RES
+1 *646:row[10] *118:10 7.5816 
+2 *118:10 *118:11 276.927 
+3 *118:11 *118:13 3.41 
+4 *118:13 *118:14 228.823 
+5 *118:14 *118:16 3.41 
+6 *118:16 *118:17 1512.67 
+7 *118:17 io_out[20] 31.5714 
+*END
+
+*D_NET *119 0.650064
+*CONN
+*P io_out[21] O
+*I *646:row[11] O *D Wishbone_VGA_controller
+*CAP
+1 io_out[21] 0.000661505
+2 *646:row[11] 0.000262449
+3 *119:16 0.0577945
+4 *119:15 0.057133
+5 *119:13 0.169857
+6 *119:12 0.17012
+7 *119:12 *139:10 0.000510245
+8 *119:16 *120:16 0.181576
+9 *112:13 *119:16 0.0121487
+*RES
+1 *646:row[11] *119:12 9.23084 
+2 *119:12 *119:13 543.474 
+3 *119:13 *119:15 3.41 
+4 *119:15 *119:16 282.945 
+5 *119:16 io_out[21] 16.8296 
+*END
+
+*D_NET *120 0.814472
+*CONN
+*P io_out[22] O
+*I *646:column[0] O *D Wishbone_VGA_controller
+*CAP
+1 io_out[22] 0.000708122
+2 *646:column[0] 0.000266909
+3 *120:16 0.0373339
+4 *120:15 0.0366258
+5 *120:13 0.169816
+6 *120:12 0.170083
+7 *120:12 *139:10 0.000510245
+8 *120:16 *121:16 0.216355
+9 *112:13 *120:16 0.00119604
+10 *119:16 *120:16 0.181576
+*RES
+1 *646:column[0] *120:12 9.23084 
+2 *120:12 *120:13 543.367 
+3 *120:13 *120:15 3.41 
+4 *120:15 *120:16 337.139 
+5 *120:16 io_out[22] 17.4368 
+*END
+
+*D_NET *121 0.740761
+*CONN
+*P io_out[23] O
+*I *646:column[1] O *D Wishbone_VGA_controller
+*CAP
+1 io_out[23] 0.000738581
+2 *646:column[1] 0.000564232
+3 *121:16 0.0888297
+4 *121:15 0.0880912
+5 *121:13 0.169764
+6 *121:12 0.170329
+7 *121:12 *139:10 0.00122777
+8 io_out[19] *121:16 4.67786e-05
+9 *112:13 *121:16 0.000479953
+10 *113:22 *121:16 0.00160207
+11 *114:20 *121:16 0.00273298
+12 *120:16 *121:16 0.216355
+*RES
+1 *646:column[1] *121:12 10.3839 
+2 *121:12 *121:13 543.26 
+3 *121:13 *121:15 3.41 
+4 *121:15 *121:16 390.108 
+5 *121:16 io_out[23] 18.0439 
+*END
+
+*D_NET *122 1.17386
+*CONN
+*P io_out[24] O
+*I *646:column[2] O *D Wishbone_VGA_controller
+*CAP
+1 io_out[24] 0.000883411
+2 *646:column[2] 0.000601812
+3 *122:13 0.076121
+4 *122:12 0.0752376
+5 *122:10 0.0432713
+6 *122:9 0.0438731
+7 *122:10 *123:10 0.263771
+8 *122:10 *124:16 0
+9 *122:10 *125:10 0.0856221
+10 *122:10 *126:10 0.0302586
+11 *122:10 *127:10 0.0274074
+12 *122:10 *129:10 0.0520917
+13 *122:10 *130:10 0.0565713
+14 *122:13 *123:13 0.0108528
+15 *122:13 *124:19 0.20431
+16 *122:13 *126:13 1.62764e-05
+17 *122:13 *131:13 0.090637
+18 *116:10 *122:10 0.112332
+*RES
+1 *646:column[2] *122:9 13.535 
+2 *122:9 *122:10 411.476 
+3 *122:10 *122:12 3.41 
+4 *122:12 *122:13 2973.3 
+5 *122:13 io_out[24] 5.9198 
+*END
+
+*D_NET *123 1.03279
+*CONN
+*P io_out[25] O
+*I *646:column[3] O *D Wishbone_VGA_controller
+*CAP
+1 io_out[25] 0.000987609
+2 *646:column[3] 0.000538839
+3 *123:13 0.0444098
+4 *123:12 0.0434222
+5 *123:10 0.0881702
+6 *123:9 0.088709
+7 *123:10 *124:16 0
+8 *123:10 *125:10 0.000784752
+9 *123:10 *131:10 0.0525097
+10 *123:10 *132:10 0.0570286
+11 *123:10 *141:10 0
+12 *123:13 *124:19 0.204309
+13 *123:13 *125:13 0.0106931
+14 *123:13 *126:13 0.166599
+15 *122:10 *123:10 0.263771
+16 *122:13 *123:13 0.0108528
+*RES
+1 *646:column[3] *123:9 12.9279 
+2 *123:9 *123:10 414.647 
+3 *123:10 *123:12 3.41 
+4 *123:12 *123:13 2740.16 
+5 *123:13 io_out[25] 6.06393 
+*END
+
+*D_NET *124 0.972363
+*CONN
+*P io_out[26] O
+*I *646:column[4] O *D Wishbone_VGA_controller
+*CAP
+1 io_out[26] 0.000915846
+2 *646:column[4] 0.00067912
+3 *124:19 0.0318705
+4 *124:18 0.0309547
+5 *124:16 0.0906025
+6 *124:15 0.0909728
+7 *124:10 0.0134717
+8 *124:9 0.0137805
+9 *124:10 *125:10 0.0185089
+10 *124:10 *142:12 0.0432159
+11 *124:16 *141:10 0.103764
+12 *124:16 *573:8 0.000209741
+13 *124:16 *582:8 0.00426543
+14 *124:16 *585:8 0.00557333
+15 *124:16 *592:8 0.00699131
+16 *124:16 *598:8 0.00746213
+17 *124:16 *601:8 0.00222355
+18 *124:16 *602:8 0.00162711
+19 *124:16 *604:8 0.00827734
+20 *124:16 *611:10 0.0312023
+21 *124:16 *615:10 0.0328986
+22 *124:16 *619:10 0.0242768
+23 *122:10 *124:16 0
+24 *122:13 *124:19 0.20431
+25 *123:10 *124:16 0
+26 *123:13 *124:19 0.204309
+*RES
+1 *646:column[4] *124:9 15.9911 
+2 *124:9 *124:10 405.911 
+3 *124:10 *124:15 13.6511 
+4 *124:15 *124:16 346.832 
+5 *124:16 *124:18 3.41 
+6 *124:18 *124:19 2503.38 
+7 *124:19 io_out[26] 5.99187 
+*END
+
+*D_NET *125 1.02431
+*CONN
+*P io_out[27] O
+*I *646:column[5] O *D Wishbone_VGA_controller
+*CAP
+1 io_out[27] 0.00105591
+2 *646:column[5] 0.000665321
+3 *125:13 0.0382343
+4 *125:12 0.0371784
+5 *125:10 0.0990938
+6 *125:9 0.0997591
+7 *125:10 *646:we 0.000791531
+8 *125:10 *142:12 0.0516051
+9 *125:10 *143:10 0.0538583
+10 *125:10 *556:8 0.0215636
+11 *125:10 *570:10 0.000566845
+12 *125:10 *570:12 0.0178661
+13 *125:10 *576:14 0.00371264
+14 *125:10 *579:8 0.00222487
+15 *125:10 *587:14 0.00332373
+16 *125:10 *588:8 0.00345518
+17 *125:10 *590:16 0.000561322
+18 *125:10 *594:8 0.0055211
+19 *125:10 *596:16 0.0005239
+20 *125:10 *618:10 0.0373481
+21 *125:10 *623:10 0
+22 *125:10 *627:10 0
+23 *125:10 *628:10 0
+24 *125:10 *645:8 0.00308154
+25 *125:13 *126:13 0.166679
+26 *125:13 *127:13 0.147687
+27 *116:10 *125:10 0.112339
+28 *122:10 *125:10 0.0856221
+29 *123:10 *125:10 0.000784752
+30 *123:13 *125:13 0.0106931
+31 *124:10 *125:10 0.0185089
+*RES
+1 *646:column[5] *125:9 14.7493 
+2 *125:9 *125:10 421.133 
+3 *125:10 *125:12 3.41 
+4 *125:12 *125:13 2276.3 
+5 *125:13 io_out[27] 6.20807 
+*END
+
+*D_NET *126 1.00458
+*CONN
+*P io_out[28] O
+*I *646:column[6] O *D Wishbone_VGA_controller
+*CAP
+1 io_out[28] 0.000980716
+2 *646:column[6] 0.000626504
+3 *126:13 0.0262732
+4 *126:12 0.0252925
+5 *126:10 0.0320013
+6 *126:9 0.0326278
+7 *126:10 *646:we 0.000711277
+8 *126:10 *127:10 0.257249
+9 *126:10 *131:10 1.82657e-05
+10 *126:10 *143:10 0.238879
+11 *126:10 *570:10 0.00152239
+12 *126:10 *570:12 0.00124313
+13 *126:10 *645:8 0.00106246
+14 *116:10 *126:10 0.0225356
+15 *122:10 *126:10 0.0302586
+16 *122:13 *126:13 1.62764e-05
+17 *123:13 *126:13 0.166599
+18 *125:13 *126:13 0.166679
+*RES
+1 *646:column[6] *126:9 15.0804 
+2 *126:9 *126:10 2419.23 
+3 *126:10 *126:12 4.5 
+4 *126:12 *126:13 2042.4 
+5 *126:13 io_out[28] 6.136 
+*END
+
+*D_NET *127 0.963157
+*CONN
+*P io_out[29] O
+*I *646:column[7] O *D Wishbone_VGA_controller
+*CAP
+1 io_out[29] 0.00110099
+2 *646:column[7] 0.000602518
+3 *127:13 0.0277053
+4 *127:12 0.0266043
+5 *127:10 0.0304389
+6 *127:9 0.0310414
+7 *127:10 *129:10 0.259211
+8 *127:10 *131:10 1.39841e-05
+9 *127:10 *143:10 0.00111159
+10 *127:13 *129:13 0.128683
+11 *116:10 *127:10 0.0243006
+12 *122:10 *127:10 0.0274074
+13 *125:13 *127:13 0.147687
+14 *126:10 *127:10 0.257249
+*RES
+1 *646:column[7] *127:9 14.7768 
+2 *127:9 *127:10 2437.3 
+3 *127:10 *127:12 4.5 
+4 *127:12 *127:13 1809.56 
+5 *127:13 io_out[29] 6.28013 
+*END
+
+*D_NET *129 0.923775
+*CONN
+*P io_out[30] O
+*I *646:column[8] O *D Wishbone_VGA_controller
+*CAP
+1 io_out[30] 0.00107802
+2 *646:column[8] 0.000566363
+3 *129:13 0.0248142
+4 *129:12 0.0237362
+5 *129:10 0.0307095
+6 *129:9 0.0312758
+7 *129:10 *130:10 0.261174
+8 *129:10 *131:10 2.14757e-05
+9 *129:10 *143:10 0.000788025
+10 *129:13 *130:13 0.109626
+11 *122:10 *129:10 0.0520917
+12 *127:10 *129:10 0.259211
+13 *127:13 *129:13 0.128683
+*RES
+1 *646:column[8] *129:9 14.4732 
+2 *129:9 *129:10 2455.79 
+3 *129:10 *129:12 4.5 
+4 *129:12 *129:13 1576.72 
+5 *129:13 io_out[30] 6.3522 
+*END
+
+*D_NET *130 0.838336
+*CONN
+*P io_out[31] O
+*I *646:column[9] O *D Wishbone_VGA_controller
+*CAP
+1 io_out[31] 0.0011693
+2 *646:column[9] 0.000545065
+3 *130:13 0.0420766
+4 *130:12 0.0409073
+5 *130:10 0.0309732
+6 *130:9 0.0315182
+7 *130:10 *131:10 0.263181
+8 *130:10 *143:10 0.000594809
+9 *122:10 *130:10 0.0565713
+10 *129:10 *130:10 0.261174
+11 *129:13 *130:13 0.109626
+*RES
+1 *646:column[9] *130:9 14.1696 
+2 *130:9 *130:10 2474.27 
+3 *130:10 *130:12 4.5 
+4 *130:12 *130:13 1343.28 
+5 *130:13 io_out[31] 6.42427 
+*END
+
+*D_NET *131 0.845405
+*CONN
+*P io_out[32] O
+*I *646:column[10] O *D Wishbone_VGA_controller
+*CAP
+1 io_out[32] 0.000861948
+2 *646:column[10] 0.000523768
+3 *131:13 0.0188103
+4 *131:12 0.0179483
+5 *131:10 0.0315141
+6 *131:9 0.0320378
+7 *131:10 *132:10 0.265517
+8 *131:10 *143:10 0.000231434
+9 *131:13 *132:13 0.0715793
+10 *122:13 *131:13 0.090637
+11 *123:10 *131:10 0.0525097
+12 *126:10 *131:10 1.82657e-05
+13 *127:10 *131:10 1.39841e-05
+14 *129:10 *131:10 2.14757e-05
+15 *130:10 *131:10 0.263181
+*RES
+1 *646:column[10] *131:9 13.8661 
+2 *131:9 *131:10 2496.45 
+3 *131:10 *131:12 4.5 
+4 *131:12 *131:13 1110.44 
+5 *131:13 io_out[32] 5.84773 
+*END
+
+*D_NET *132 0.615022
+*CONN
+*P io_out[33] O
+*I *646:column[11] O *D Wishbone_VGA_controller
+*CAP
+1 io_out[33] 0.000883511
+2 *646:column[11] 0.00050247
+3 *132:13 0.0275782
+4 *132:12 0.0266947
+5 *132:10 0.082368
+6 *132:9 0.0828705
+7 *132:10 *143:10 0
+8 *132:10 *582:8 0
+9 *132:10 *585:8 0
+10 *132:10 *592:8 0
+11 *132:10 *611:10 0
+12 *123:10 *132:10 0.0570286
+13 *131:10 *132:10 0.265517
+14 *131:13 *132:13 0.0715793
+*RES
+1 *646:column[11] *132:9 13.5625 
+2 *132:9 *132:10 2515.75 
+3 *132:10 *132:12 4.5 
+4 *132:12 *132:13 876.991 
+5 *132:13 io_out[33] 5.77567 
+*END
+
+*D_NET *139 0.65537
+*CONN
+*P io_out[5] O
+*I *646:n_blank O *D Wishbone_VGA_controller
+*CAP
+1 io_out[5] 0.000791824
+2 *646:n_blank 0.000163521
+3 *139:13 0.0318782
+4 *139:12 0.0310864
+5 *139:10 0.0704534
+6 *139:9 0.0706169
+7 *139:10 *140:10 0.25864
+8 *139:10 *141:10 0.00107411
+9 *139:10 *543:8 0.0145126
+10 *139:10 *544:8 0.00044533
+11 *139:10 *568:14 0.0171023
+12 *139:10 *573:8 0.000412985
+13 *139:10 *610:5 0.00225763
+14 *139:10 *614:10 0.0856546
+15 *139:10 *620:5 0.00234988
+16 *139:13 *140:13 0.0434649
+17 *107:10 *139:10 0.011571
+18 *108:10 *139:10 0.0104417
+19 *113:10 *139:10 5.62247e-05
+20 *114:10 *139:10 7.00185e-05
+21 *115:10 *139:10 7.00185e-05
+22 *118:10 *139:10 7.94642e-06
+23 *119:12 *139:10 0.000510245
+24 *120:12 *139:10 0.000510245
+25 *121:12 *139:10 0.00122777
+*RES
+1 *646:n_blank *139:9 6.44571 
+2 *139:9 *139:10 415.079 
+3 *139:10 *139:12 3.41 
+4 *139:12 *139:13 947.875 
+5 *139:13 io_out[5] 5.55947 
+*END
+
+*D_NET *140 0.817398
+*CONN
+*P io_out[6] O
+*I *646:n_sync O *D Wishbone_VGA_controller
+*CAP
+1 io_out[6] 0.000838537
+2 *646:n_sync 0.000198114
+3 *140:13 0.0228766
+4 *140:12 0.0220381
+5 *140:10 0.0458813
+6 *140:9 0.0460794
+7 *140:10 *141:10 0.258551
+8 *140:10 *544:8 0.0183576
+9 *140:10 *573:8 0.0189722
+10 *140:13 *141:13 0.0516409
+11 *109:10 *140:10 0.0109547
+12 *110:10 *140:10 0.0189045
+13 *139:10 *140:10 0.25864
+14 *139:13 *140:13 0.0434649
+*RES
+1 *646:n_sync *140:9 6.64214 
+2 *140:9 *140:10 411.692 
+3 *140:10 *140:12 3.41 
+4 *140:12 *140:13 1126.38 
+5 *140:13 io_out[6] 5.7036 
+*END
+
+*D_NET *141 0.802296
+*CONN
+*P io_out[7] O
+*I *646:h_sync O *D Wishbone_VGA_controller
+*CAP
+1 io_out[7] 0.000836542
+2 *646:h_sync 0.000247854
+3 *141:13 0.0246608
+4 *141:12 0.0238243
+5 *141:10 0.06754
+6 *141:9 0.0677879
+7 *141:10 *543:8 0.000274417
+8 *141:10 *544:8 0.000307146
+9 *141:10 *553:8 0.0213704
+10 *141:10 *555:8 0.0198183
+11 *141:10 *557:8 0.0201199
+12 *141:10 *562:8 0.0221936
+13 *141:10 *568:14 0.000210525
+14 *141:10 *573:8 0.000355534
+15 *141:10 *601:8 0.00310772
+16 *141:10 *602:8 0.00325895
+17 *141:13 *142:15 0.111352
+18 *123:10 *141:10 0
+19 *124:16 *141:10 0.103764
+20 *139:10 *141:10 0.00107411
+21 *140:10 *141:10 0.258551
+22 *140:13 *141:13 0.0516409
+*RES
+1 *646:h_sync *141:9 8.07071 
+2 *141:9 *141:10 418.034 
+3 *141:10 *141:12 3.41 
+4 *141:12 *141:13 1364.38 
+5 *141:13 io_out[7] 5.84773 
+*END
+
+*D_NET *142 0.832165
+*CONN
+*P io_out[8] O
+*I *646:v_sync O *D Wishbone_VGA_controller
+*CAP
+1 io_out[8] 0.000858005
+2 *646:v_sync 0.000640485
+3 *142:15 0.0251482
+4 *142:14 0.0242902
+5 *142:12 0.0390749
+6 *142:11 0.0397154
+7 *142:12 *143:10 0.247462
+8 *142:12 *556:8 0.0178292
+9 *142:12 *570:12 0.0761824
+10 *142:12 *618:10 0.0235947
+11 *142:15 *143:13 0.131196
+12 *124:10 *142:12 0.0432159
+13 *125:10 *142:12 0.0516051
+14 *141:13 *142:15 0.111352
+*RES
+1 *646:v_sync *142:11 14.5804 
+2 *142:11 *142:12 2326.41 
+3 *142:12 *142:14 4.5 
+4 *142:14 *142:15 1607.69 
+5 *142:15 io_out[8] 5.9198 
+*END
+
+*D_NET *143 0.866695
+*CONN
+*P io_out[9] O
+*I *646:display_enable O *D Wishbone_VGA_controller
+*CAP
+1 io_out[9] 0.000879467
+2 *646:display_enable 0.000636472
+3 *143:13 0.0613358
+4 *143:12 0.0604563
+5 *143:10 0.0321213
+6 *143:9 0.0327578
+7 *143:10 *570:12 0.004387
+8 *125:10 *143:10 0.0538583
+9 *126:10 *143:10 0.238879
+10 *127:10 *143:10 0.00111159
+11 *129:10 *143:10 0.000788025
+12 *130:10 *143:10 0.000594809
+13 *131:10 *143:10 0.000231434
+14 *132:10 *143:10 0
+15 *142:12 *143:10 0.247462
+16 *142:15 *143:13 0.131196
+*RES
+1 *646:display_enable *143:9 15.3839 
+2 *143:9 *143:10 2400.34 
+3 *143:10 *143:12 4.5 
+4 *143:12 *143:13 1844.78 
+5 *143:13 io_out[9] 5.99187 
+*END
+
+*D_NET *540 0.0151276
+*CONN
+*P wb_clk_i I
+*I *646:clk I *D Wishbone_VGA_controller
+*CAP
+1 wb_clk_i 0.000779877
+2 *646:clk 0.000889189
+3 *540:8 0.00326123
+4 *540:7 0.00315191
+5 *540:8 *541:8 0.00704535
+*RES
+1 wb_clk_i *540:7 20.5 
+2 *540:7 *540:8 71.5893 
+3 *540:8 *646:clk 20.5446 
+*END
+
+*D_NET *541 0.0197856
+*CONN
+*P wb_rst_i I
+*I *646:rst I *D Wishbone_VGA_controller
+*CAP
+1 wb_rst_i 0.000792034
+2 *646:rst 0.00129478
+3 *541:8 0.00277641
+4 *541:7 0.00227366
+5 *646:rst *587:8 0
+6 *646:rst *630:10 0.000665796
+7 *646:rst *645:8 0
+8 *541:8 *542:10 5.50401e-05
+9 *541:8 *575:8 0.00244006
+10 *541:8 *587:8 0.00244251
+11 *540:8 *541:8 0.00704535
+*RES
+1 wb_rst_i *541:7 20.1964 
+2 *541:7 *541:8 76.1071 
+3 *541:8 *646:rst 30.5446 
+*END
+
+*D_NET *542 0.0338719
+*CONN
+*P wbs_ack_o O
+*I *646:ack O *D Wishbone_VGA_controller
+*CAP
+1 wbs_ack_o 0.000693344
+2 *646:ack 0.00103842
+3 *542:10 0.00435548
+4 *542:9 0.00470056
+5 *542:10 *575:8 0.00020657
+6 *542:10 *576:8 0.000544597
+7 *542:10 *587:8 0.00026805
+8 *542:10 *619:16 0.010855
+9 *542:10 *630:10 0
+10 *542:10 *636:10 0
+11 *542:10 *644:8 0.0111548
+12 *541:8 *542:10 5.50401e-05
+*RES
+1 *646:ack *542:9 22.3661 
+2 *542:9 *542:10 155.786 
+3 *542:10 wbs_ack_o 18.6786 
+*END
+
+*D_NET *543 0.204843
+*CONN
+*P wbs_adr_i[0] I
+*I *646:adr[0] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[0] 0.00150839
+2 *646:adr[0] 0.000145947
+3 *543:8 0.0153564
+4 *543:7 0.0167188
+5 *543:8 *568:14 0.0811583
+6 *543:8 *573:8 0.0745645
+7 *543:8 *598:8 0
+8 *543:8 *601:8 0
+9 *543:8 *602:8 0.000604161
+10 *139:10 *543:8 0.0145126
+11 *141:10 *543:8 0.000274417
+*RES
+1 wbs_adr_i[0] *543:7 33.25 
+2 *543:7 *543:8 853.179 
+3 *543:8 *646:adr[0] 6.97321 
+*END
+
+*D_NET *544 0.216688
+*CONN
+*P wbs_adr_i[10] I
+*I *646:adr[10] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[10] 0.00161849
+2 *646:adr[10] 0.000216177
+3 *544:8 0.0128324
+4 *544:7 0.0142347
+5 *544:8 *553:8 0.0760527
+6 *544:8 *573:8 0.0870701
+7 *544:8 *602:8 0.00555362
+8 *139:10 *544:8 0.00044533
+9 *140:10 *544:8 0.0183576
+10 *141:10 *544:8 0.000307146
+*RES
+1 wbs_adr_i[10] *544:7 32.6429 
+2 *544:7 *544:8 861.804 
+3 *544:8 *646:adr[10] 8.40179 
+*END
+
+*D_NET *545 0.215848
+*CONN
+*P wbs_adr_i[11] I
+*I *646:adr[11] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[11] 0.000561996
+2 *646:adr[11] 0.00137377
+3 *545:8 0.0144378
+4 *545:7 0.013626
+5 *545:8 *546:8 0.0902669
+6 *545:8 *554:8 0.0719516
+7 *545:8 *572:8 0.00664695
+8 *545:8 *605:8 0
+9 *545:8 *613:10 0.00164901
+10 *545:8 *617:10 0.0153344
+11 *545:8 *634:10 0
+*RES
+1 wbs_adr_i[11] *545:7 14.7321 
+2 *545:7 *545:8 865.089 
+3 *545:8 *646:adr[11] 26.3125 
+*END
+
+*D_NET *546 0.224505
+*CONN
+*P wbs_adr_i[12] I
+*I *646:adr[12] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[12] 0.000553587
+2 *646:adr[12] 0.00139269
+3 *546:8 0.0130343
+4 *546:7 0.0121952
+5 *546:8 *547:8 0.0906296
+6 *546:8 *605:8 0
+7 *546:8 *613:10 0.00177816
+8 *546:8 *617:10 0.0146542
+9 *546:8 *634:10 0
+10 *545:8 *546:8 0.0902669
+*RES
+1 wbs_adr_i[12] *546:7 14.4286 
+2 *546:7 *546:8 867.964 
+3 *546:8 *646:adr[12] 26.6161 
+*END
+
+*D_NET *547 0.225516
+*CONN
+*P wbs_adr_i[13] I
+*I *646:adr[13] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[13] 0.000538733
+2 *646:adr[13] 0.0014138
+3 *547:8 0.0129846
+4 *547:7 0.0121095
+5 *547:8 *548:8 0.0909406
+6 *547:8 *605:8 0.000190996
+7 *547:8 *613:10 0.00162004
+8 *547:8 *617:10 0.0150877
+9 *546:8 *547:8 0.0906296
+*RES
+1 wbs_adr_i[13] *547:7 14.125 
+2 *547:7 *547:8 871.25 
+3 *547:8 *646:adr[13] 26.9196 
+*END
+
+*D_NET *548 0.227216
+*CONN
+*P wbs_adr_i[14] I
+*I *646:adr[14] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[14] 0.000530343
+2 *646:adr[14] 0.00139109
+3 *548:8 0.0129038
+4 *548:7 0.0120431
+5 *548:8 *549:8 0.0914226
+6 *548:8 *605:8 0.000476932
+7 *548:8 *613:10 0.000740393
+8 *548:8 *617:10 0.0167673
+9 *547:8 *548:8 0.0909406
+*RES
+1 wbs_adr_i[14] *548:7 13.8214 
+2 *548:7 *548:8 875.357 
+3 *548:8 *646:adr[14] 25.9911 
+*END
+
+*D_NET *549 0.226576
+*CONN
+*P wbs_adr_i[15] I
+*I *646:adr[15] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[15] 0.000521915
+2 *646:adr[15] 0.00140382
+3 *549:8 0.012887
+4 *549:7 0.0120051
+5 *549:8 *550:8 0.091687
+6 *549:8 *552:8 0.000291858
+7 *549:8 *605:8 0.00066408
+8 *549:8 *617:10 0.015693
+9 *548:8 *549:8 0.0914226
+*RES
+1 wbs_adr_i[15] *549:7 13.5179 
+2 *549:7 *549:8 878.232 
+3 *549:8 *646:adr[15] 26.7054 
+*END
+
+*D_NET *550 0.225446
+*CONN
+*P wbs_adr_i[16] I
+*I *646:adr[16] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[16] 0.000507061
+2 *646:adr[16] 0.00143818
+3 *550:8 0.0129097
+4 *550:7 0.0119785
+5 *550:8 *551:8 0.0919954
+6 *550:8 *552:8 0.00048645
+7 *550:8 *605:8 0.000914796
+8 *550:8 *617:10 0.0135292
+9 *549:8 *550:8 0.091687
+*RES
+1 wbs_adr_i[16] *550:7 13.2143 
+2 *550:7 *550:8 880.696 
+3 *550:8 *646:adr[16] 27.4196 
+*END
+
+*D_NET *551 0.225386
+*CONN
+*P wbs_adr_i[17] I
+*I *646:adr[17] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[17] 0.000492227
+2 *646:adr[17] 0.00145304
+3 *551:8 0.0130647
+4 *551:7 0.0121039
+5 *551:8 *552:8 0.0147431
+6 *551:8 *561:8 0.0788927
+7 *551:8 *580:8 0.00305132
+8 *551:8 *605:8 0.00958936
+9 *550:8 *551:8 0.0919954
+*RES
+1 wbs_adr_i[17] *551:7 12.9107 
+2 *551:7 *551:8 883.982 
+3 *551:8 *646:adr[17] 27.7232 
+*END
+
+*D_NET *552 0.216645
+*CONN
+*P wbs_adr_i[18] I
+*I *646:adr[18] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[18] 0.000428563
+2 *646:adr[18] 0.00153777
+3 *552:8 0.0453338
+4 *552:7 0.0442246
+5 *552:8 *561:8 0.0166467
+6 *552:8 *567:8 0.025507
+7 *552:8 *577:8 0.00356507
+8 *552:8 *578:8 0.0027875
+9 *552:8 *580:8 0.00386291
+10 *552:8 *590:8 0.0115434
+11 *552:8 *596:8 0.0087204
+12 *552:8 *600:8 0.00932978
+13 *552:8 *603:8 0.000487702
+14 *552:8 *605:8 0.00145176
+15 *552:8 *613:10 0.0018615
+16 *552:8 *617:10 0.0238356
+17 *549:8 *552:8 0.000291858
+18 *550:8 *552:8 0.00048645
+19 *551:8 *552:8 0.0147431
+*RES
+1 wbs_adr_i[18] *552:7 10.7582 
+2 *552:7 *552:8 155.567 
+3 *552:8 *646:adr[18] 28.1064 
+*END
+
+*D_NET *553 0.22378
+*CONN
+*P wbs_adr_i[19] I
+*I *646:adr[19] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[19] 0.00172321
+2 *646:adr[19] 0.000235101
+3 *553:8 0.015166
+4 *553:7 0.0166542
+5 *553:7 *603:16 0
+6 *553:8 *555:8 0.0923329
+7 *553:8 *602:8 9.7497e-05
+8 *553:8 *604:8 0.000147806
+9 *141:10 *553:8 0.0213704
+10 *544:8 *553:8 0.0760527
+*RES
+1 wbs_adr_i[19] *553:7 32.3393 
+2 *553:7 *553:8 889.732 
+3 *553:8 *646:adr[19] 8.70536 
+*END
+
+*D_NET *554 0.19921
+*CONN
+*P wbs_adr_i[1] I
+*I *646:adr[1] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[1] 0.000528178
+2 *646:adr[1] 0.0013473
+3 *554:8 0.0179732
+4 *554:7 0.0171541
+5 *554:8 *568:10 0
+6 *554:8 *572:8 0.0786648
+7 *554:8 *605:8 0
+8 *554:8 *613:10 0.0115912
+9 *554:8 *633:10 0
+10 *554:8 *634:10 0
+11 *545:8 *554:8 0.0719516
+*RES
+1 wbs_adr_i[1] *554:7 15.0357 
+2 *554:7 *554:8 851.125 
+3 *554:8 *646:adr[1] 25.1875 
+*END
+
+*D_NET *555 0.232186
+*CONN
+*P wbs_adr_i[20] I
+*I *646:adr[20] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[20] 0.00170576
+2 *646:adr[20] 0.000254025
+3 *555:8 0.0123926
+4 *555:7 0.0138443
+5 *555:7 *613:15 0
+6 *555:8 *557:8 0.0909939
+7 *555:8 *604:8 0.000654013
+8 *555:8 *611:10 1.94888e-05
+9 *555:8 *615:10 0.000170373
+10 *141:10 *555:8 0.0198183
+11 *553:8 *555:8 0.0923329
+*RES
+1 wbs_adr_i[20] *555:7 32.0357 
+2 *555:7 *555:8 892.607 
+3 *555:8 *646:adr[20] 9.00893 
+*END
+
+*D_NET *556 0.220743
+*CONN
+*P wbs_adr_i[21] I
+*I *646:adr[21] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[21] 0.00123462
+2 *646:adr[21] 0.000736114
+3 *556:8 0.0131562
+4 *556:7 0.0136547
+5 *556:8 *570:12 0.0630937
+6 *556:8 *588:8 0.00347851
+7 *556:8 *594:8 0.000386371
+8 *556:8 *618:10 0.08561
+9 *125:10 *556:8 0.0215636
+10 *142:12 *556:8 0.0178292
+*RES
+1 wbs_adr_i[21] *556:7 24.75 
+2 *556:7 *556:8 895.482 
+3 *556:8 *646:adr[21] 16.2946 
+*END
+
+*D_NET *557 0.230192
+*CONN
+*P wbs_adr_i[22] I
+*I *646:adr[22] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[22] 0.00169748
+2 *646:adr[22] 0.000272949
+3 *557:8 0.0129859
+4 *557:7 0.0144104
+5 *557:8 *562:8 0.0866169
+6 *557:8 *615:10 0.00309441
+7 *141:10 *557:8 0.0201199
+8 *555:8 *557:8 0.0909939
+*RES
+1 wbs_adr_i[22] *557:7 31.7321 
+2 *557:7 *557:8 898.768 
+3 *557:8 *646:adr[22] 9.3125 
+*END
+
+*D_NET *558 0.221204
+*CONN
+*P wbs_adr_i[23] I
+*I *646:adr[23] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[23] 0.000217218
+2 *646:adr[23] 0.00186108
+3 *558:10 0.0183733
+4 *558:9 0.0167295
+5 *558:10 *559:10 0.0941256
+6 *558:10 *574:10 0.0676133
+7 *558:10 *606:10 0.000370246
+8 *558:10 *607:10 4.52037e-05
+9 *558:10 *609:10 0.0218688
+*RES
+1 wbs_adr_i[23] *558:9 6.78571 
+2 *558:9 *558:10 900 
+3 *558:10 *646:adr[23] 36.0268 
+*END
+
+*D_NET *559 0.236684
+*CONN
+*P wbs_adr_i[24] I
+*I *646:adr[24] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[24] 0.00020484
+2 *646:adr[24] 0.00188001
+3 *559:10 0.0133752
+4 *559:9 0.0117
+5 *559:10 *560:10 0.0947515
+6 *559:10 *607:10 0.000422491
+7 *559:10 *609:10 0.020224
+8 *558:10 *559:10 0.0941256
+*RES
+1 wbs_adr_i[24] *559:9 6.48214 
+2 *559:9 *559:10 903.286 
+3 *559:10 *646:adr[24] 36.3304 
+*END
+
+*D_NET *560 0.238929
+*CONN
+*P wbs_adr_i[25] I
+*I *646:adr[25] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[25] 0.000154849
+2 *646:adr[25] 0.00189179
+3 *560:10 0.0142706
+4 *560:9 0.0125336
+5 *560:10 *563:10 0.0916443
+6 *560:10 *607:10 7.15846e-05
+7 *560:10 *612:10 0.0236105
+8 *559:10 *560:10 0.0947515
+*RES
+1 wbs_adr_i[25] *560:9 5.66071 
+2 *560:9 *560:10 909.446 
+3 *560:10 *646:adr[25] 35.8125 
+*END
+
+*D_NET *561 0.225407
+*CONN
+*P wbs_adr_i[26] I
+*I *646:adr[26] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[26] 0.000503342
+2 *646:adr[26] 0.00147027
+3 *561:8 0.0162312
+4 *561:7 0.0152643
+5 *561:7 *646:dat[10] 0
+6 *561:8 *567:8 0.088539
+7 *561:8 *580:8 0.00645716
+8 *561:8 *596:8 0.000756358
+9 *561:8 *617:10 0.000645931
+10 *551:8 *561:8 0.0788927
+11 *552:8 *561:8 0.0166467
+*RES
+1 wbs_adr_i[26] *561:7 12.6071 
+2 *561:7 *561:8 911.089 
+3 *561:8 *646:adr[26] 28.4375 
+*END
+
+*D_NET *562 0.235338
+*CONN
+*P wbs_adr_i[27] I
+*I *646:adr[27] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[27] 0.00174294
+2 *646:adr[27] 0.000289161
+3 *562:8 0.0139414
+4 *562:7 0.0153952
+5 *562:7 *618:15 0
+6 *562:8 *615:10 0.0017219
+7 *562:8 *619:10 0.093437
+8 *141:10 *562:8 0.0221936
+9 *557:8 *562:8 0.0866169
+*RES
+1 wbs_adr_i[27] *562:7 31.4286 
+2 *562:7 *562:8 913.964 
+3 *562:8 *646:adr[27] 9.61607 
+*END
+
+*D_NET *563 0.238099
+*CONN
+*P wbs_adr_i[28] I
+*I *646:adr[28] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[28] 0.000101182
+2 *646:adr[28] 0.00190472
+3 *563:10 0.0144251
+4 *563:9 0.0126215
+5 *563:10 *564:10 0.0960629
+6 *563:10 *612:10 0.0213397
+7 *560:10 *563:10 0.0916443
+*RES
+1 wbs_adr_i[28] *563:9 5.66071 
+2 *563:9 *563:10 916.429 
+3 *563:10 *646:adr[28] 36.9375 
+*END
+
+*D_NET *564 0.243451
+*CONN
+*P wbs_adr_i[29] I
+*I *646:adr[29] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[29] 0.000128758
+2 *646:adr[29] 0.0018651
+3 *564:10 0.0138174
+4 *564:9 0.012081
+5 *564:10 *566:10 0.0962415
+6 *564:10 *616:10 0.0232549
+7 *563:10 *564:10 0.0960629
+*RES
+1 wbs_adr_i[29] *564:9 5.66071 
+2 *564:9 *564:10 922.179 
+3 *564:10 *646:adr[29] 36.0089 
+*END
+
+*D_NET *565 0.216548
+*CONN
+*P wbs_adr_i[2] I
+*I *646:adr[2] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[2] 6.84526e-05
+2 *646:adr[2] 0.00193825
+3 *565:8 0.0162801
+4 *565:7 0.0144103
+5 *565:8 *569:8 0.00184788
+6 *565:8 *571:8 0.0822689
+7 *565:8 *574:10 0.0770402
+8 *565:8 *606:10 0
+9 *565:8 *608:10 0.0226938
+*RES
+1 wbs_adr_i[2] *565:7 5.625 
+2 *565:7 *565:8 848.25 
+3 *565:8 *646:adr[2] 35.4196 
+*END
+
+*D_NET *566 0.202874
+*CONN
+*P wbs_adr_i[30] I
+*I *646:adr[30] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[30] 0.000192418
+2 *646:adr[30] 0.00191477
+3 *566:10 0.0319663
+4 *566:9 0.030244
+5 *566:10 *616:10 0.0423146
+6 *564:10 *566:10 0.0962415
+*RES
+1 wbs_adr_i[30] *566:9 6.48214 
+2 *566:9 *566:10 922.589 
+3 *566:10 *646:adr[30] 36.3125 
+*END
+
+*D_NET *567 0.203145
+*CONN
+*P wbs_adr_i[31] I
+*I *646:adr[31] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[31] 0.000389902
+2 *646:adr[31] 0.00148347
+3 *567:8 0.0269059
+4 *567:7 0.0258123
+5 *567:7 *646:dat[14] 0.000396992
+6 *567:8 *596:8 0.000308528
+7 *567:8 *600:8 0.0338017
+8 *552:8 *567:8 0.025507
+9 *561:8 *567:8 0.088539
+*RES
+1 wbs_adr_i[31] *567:7 12.3036 
+2 *567:7 *567:8 926.696 
+3 *567:8 *646:adr[31] 28.3304 
+*END
+
+*D_NET *568 0.185021
+*CONN
+*P wbs_adr_i[3] I
+*I *646:adr[3] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[3] 0.00119358
+2 *646:adr[3] 0.000161164
+3 *568:14 0.0188319
+4 *568:13 0.0195704
+5 *568:10 0.00209319
+6 *568:10 *619:16 0.00231041
+7 *568:10 *633:10 0.0011847
+8 *568:14 *573:8 0.00323274
+9 *568:14 *583:8 0.00049148
+10 *568:14 *586:8 0.000885848
+11 *568:14 *589:8 0.00248039
+12 *568:14 *593:8 0.00182855
+13 *568:14 *595:8 0.0322854
+14 *139:10 *568:14 0.0171023
+15 *141:10 *568:14 0.000210525
+16 *543:8 *568:14 0.0811583
+17 *554:8 *568:10 0
+*RES
+1 wbs_adr_i[3] *568:10 44.4643 
+2 *568:10 *568:13 20.1071 
+3 *568:13 *568:14 824.018 
+4 *568:14 *646:adr[3] 7.49107 
+*END
+
+*D_NET *569 0.182164
+*CONN
+*P wbs_adr_i[4] I
+*I *646:adr[4] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[4] 0.000103855
+2 *646:adr[4] 0.00188906
+3 *569:8 0.019805
+4 *569:7 0.0180198
+5 *569:8 *571:8 0.0862953
+6 *569:8 *581:8 0.00146268
+7 *569:8 *584:8 0.00389881
+8 *569:8 *591:8 0.0055466
+9 *569:8 *597:8 0.0330176
+10 *569:8 *608:10 0.0102777
+11 *565:8 *569:8 0.00184788
+*RES
+1 wbs_adr_i[4] *569:7 6.23214 
+2 *569:7 *569:8 843.732 
+3 *569:8 *646:adr[4] 34.8125 
+*END
+
+*D_NET *570 0.210781
+*CONN
+*P wbs_adr_i[5] I
+*I *646:adr[5] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[5] 0.00110249
+2 *646:adr[5] 0.000736702
+3 *570:12 0.012603
+4 *570:10 0.0123114
+5 *570:7 0.00154759
+6 *570:7 *576:13 0
+7 *570:10 *646:we 0.00163057
+8 *570:10 *576:14 0.000611038
+9 *570:12 *576:14 0.0129652
+10 *570:12 *579:8 0.000908902
+11 *570:12 *587:14 0.00118198
+12 *570:12 *588:8 0.000320985
+13 *125:10 *570:10 0.000566845
+14 *125:10 *570:12 0.0178661
+15 *126:10 *570:10 0.00152239
+16 *126:10 *570:12 0.00124313
+17 *142:12 *570:12 0.0761824
+18 *143:10 *570:12 0.004387
+19 *556:8 *570:12 0.0630937
+*RES
+1 wbs_adr_i[5] *570:7 25.3571 
+2 *570:7 *570:10 26.2232 
+3 *570:10 *570:12 820.938 
+4 *570:12 *646:adr[5] 15.9911 
+*END
+
+*D_NET *571 0.218953
+*CONN
+*P wbs_adr_i[6] I
+*I *646:adr[6] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[6] 8.90201e-05
+2 *646:adr[6] 0.0018978
+3 *571:8 0.0136889
+4 *571:7 0.0118801
+5 *571:8 *574:10 0.00447397
+6 *571:8 *608:10 0.0183586
+7 *565:8 *571:8 0.0822689
+8 *569:8 *571:8 0.0862953
+*RES
+1 wbs_adr_i[6] *571:7 5.92857 
+2 *571:7 *571:8 849.893 
+3 *571:8 *646:adr[6] 35.1161 
+*END
+
+*D_NET *572 0.167814
+*CONN
+*P wbs_adr_i[7] I
+*I *646:adr[7] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[7] 0.000575035
+2 *646:adr[7] 0.00134981
+3 *572:8 0.0257381
+4 *572:7 0.0249633
+5 *572:8 *613:10 0.0151208
+6 *572:8 *613:16 0.0036697
+7 *572:8 *617:16 0.0110851
+8 *572:8 *618:16 0
+9 *572:8 *634:10 0
+10 *545:8 *572:8 0.00664695
+11 *554:8 *572:8 0.0786648
+*RES
+1 wbs_adr_i[7] *572:7 15.3393 
+2 *572:7 *572:8 852.768 
+3 *572:8 *646:adr[7] 25.7054 
+*END
+
+*D_NET *573 0.215851
+*CONN
+*P wbs_adr_i[8] I
+*I *646:adr[8] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[8] 0.0015988
+2 *646:adr[8] 0.000199439
+3 *573:8 0.0134688
+4 *573:7 0.0148682
+5 *573:8 *602:8 0.000897502
+6 *124:16 *573:8 0.000209741
+7 *139:10 *573:8 0.000412985
+8 *140:10 *573:8 0.0189722
+9 *141:10 *573:8 0.000355534
+10 *543:8 *573:8 0.0745645
+11 *544:8 *573:8 0.0870701
+12 *568:14 *573:8 0.00323274
+*RES
+1 wbs_adr_i[8] *573:7 32.9464 
+2 *573:7 *573:8 856.054 
+3 *573:8 *646:adr[8] 8.09821 
+*END
+
+*D_NET *574 0.205559
+*CONN
+*P wbs_adr_i[9] I
+*I *646:adr[9] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_adr_i[9] 0.000192305
+2 *646:adr[9] 0.00195254
+3 *574:10 0.0172009
+4 *574:9 0.0154407
+5 *574:10 *606:10 0.0027129
+6 *574:10 *608:10 0.018932
+7 *558:10 *574:10 0.0676133
+8 *565:8 *574:10 0.0770402
+9 *571:8 *574:10 0.00447397
+*RES
+1 wbs_adr_i[9] *574:9 7.08929 
+2 *574:9 *574:10 857.286 
+3 *574:10 *646:adr[9] 35.7232 
+*END
+
+*D_NET *575 0.0229146
+*CONN
+*P wbs_cyc_i I
+*I *646:cyc I *D Wishbone_VGA_controller
+*CAP
+1 wbs_cyc_i 0.000743154
+2 *646:cyc 0.000932853
+3 *575:8 0.0023819
+4 *575:7 0.0021922
+5 *575:8 *576:8 0.00769175
+6 *575:8 *587:8 0.0054335
+7 *575:8 *644:8 0.000892582
+8 *541:8 *575:8 0.00244006
+9 *542:10 *575:8 0.00020657
+*RES
+1 wbs_cyc_i *575:7 19.5893 
+2 *575:7 *575:8 93.7679 
+3 *575:8 *646:cyc 21.4554 
+*END
+
+*D_NET *576 0.0624364
+*CONN
+*P wbs_dat_i[0] I
+*I *646:dat[0] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[0] 0.000735484
+2 *646:dat[0] 0.000744388
+3 *576:14 0.00275197
+4 *576:13 0.00229804
+5 *576:8 0.00172345
+6 *576:7 0.00216847
+7 *576:8 *587:8 0.00153037
+8 *576:8 *644:8 0.00950989
+9 *576:14 *646:we 0.00119436
+10 *576:14 *587:14 0.0142547
+11 *125:10 *576:14 0.00371264
+12 *542:10 *576:8 0.000544597
+13 *570:7 *576:13 0
+14 *570:10 *576:14 0.000611038
+15 *570:12 *576:14 0.0129652
+16 *575:8 *576:8 0.00769175
+*RES
+1 wbs_dat_i[0] *576:7 19.2857 
+2 *576:7 *576:8 99.5179 
+3 *576:8 *576:13 14.5893 
+4 *576:13 *576:14 143.464 
+5 *576:14 *646:dat[0] 16.2946 
+*END
+
+*D_NET *577 0.0636916
+*CONN
+*P wbs_dat_i[10] I
+*I *646:dat[10] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[10] 0.000405208
+2 *646:dat[10] 0.00160487
+3 *577:8 0.00616736
+4 *577:7 0.00496769
+5 *646:dat[10] *594:7 0.000291849
+6 *577:8 *578:8 0.0250516
+7 *577:8 *590:8 0.00659475
+8 *577:8 *603:8 0.0143844
+9 *577:8 *605:8 0.000658896
+10 *552:8 *577:8 0.00356507
+11 *561:7 *646:dat[10] 0
+*RES
+1 wbs_dat_i[10] *577:7 11.6964 
+2 *577:7 *577:8 252.304 
+3 *577:8 *646:dat[10] 29.3482 
+*END
+
+*D_NET *578 0.0660319
+*CONN
+*P wbs_dat_i[11] I
+*I *646:dat[11] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[11] 0.000421909
+2 *646:dat[11] 0.00176933
+3 *578:8 0.00534802
+4 *578:7 0.0040006
+5 *646:dat[11] wbs_dat_o[27] 0
+6 *646:dat[11] *595:7 0
+7 *578:8 *580:8 0.023706
+8 *578:8 *590:8 0.00110521
+9 *578:8 *605:8 0.00184175
+10 *552:8 *578:8 0.0027875
+11 *577:8 *578:8 0.0250516
+*RES
+1 wbs_dat_i[11] *578:7 12 
+2 *578:7 *578:8 255.179 
+3 *578:8 *646:dat[11] 29.0446 
+*END
+
+*D_NET *579 0.0432055
+*CONN
+*P wbs_dat_i[12] I
+*I *646:dat[12] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[12] 0.00107591
+2 *646:dat[12] 0.00101361
+3 *579:8 0.0109035
+4 *579:7 0.0109658
+5 *646:dat[12] *619:15 0
+6 *579:8 *587:14 0.00215146
+7 *579:8 *588:8 0.0139614
+8 *579:8 *603:16 0
+9 *579:8 *630:10 0
+10 *125:10 *579:8 0.00222487
+11 *570:12 *579:8 0.000908902
+*RES
+1 wbs_dat_i[12] *579:7 23.5357 
+2 *579:7 *579:8 258.464 
+3 *579:8 *646:dat[12] 17.5089 
+*END
+
+*D_NET *580 0.0667157
+*CONN
+*P wbs_dat_i[13] I
+*I *646:dat[13] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[13] 0.000443207
+2 *646:dat[13] 0.00174786
+3 *580:8 0.00552473
+4 *580:7 0.00422007
+5 *646:dat[13] wbs_dat_o[29] 0
+6 *580:8 *590:8 0.000567846
+7 *580:8 *596:8 0.00140018
+8 *580:8 *605:8 0.0157344
+9 *551:8 *580:8 0.00305132
+10 *552:8 *580:8 0.00386291
+11 *561:8 *580:8 0.00645716
+12 *578:8 *580:8 0.023706
+*RES
+1 wbs_dat_i[13] *580:7 12.3036 
+2 *580:7 *580:8 261.339 
+3 *580:8 *646:dat[13] 28.7411 
+*END
+
+*D_NET *581 0.0482151
+*CONN
+*P wbs_dat_i[14] I
+*I *646:dat[14] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[14] 0.00018622
+2 *646:dat[14] 0.00192227
+3 *581:8 0.0111124
+4 *581:7 0.00937637
+5 *581:8 *584:8 0.0230078
+6 *581:8 *608:10 0.000750392
+7 *567:7 *646:dat[14] 0.000396992
+8 *569:8 *581:8 0.00146268
+*RES
+1 wbs_dat_i[14] *581:7 7.44643 
+2 *581:7 *581:8 264.214 
+3 *581:8 *646:dat[14] 33.5982 
+*END
+
+*D_NET *582 0.051842
+*CONN
+*P wbs_dat_i[15] I
+*I *646:dat[15] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[15] 0.00151129
+2 *646:dat[15] 0.000596448
+3 *582:8 0.00969533
+4 *582:7 0.0106102
+5 *582:7 *646:dat[1] 0
+6 *582:8 *585:8 0.0233453
+7 *582:8 *604:8 0.000510254
+8 *582:8 *611:10 0.0013078
+9 *124:16 *582:8 0.00426543
+10 *132:10 *582:8 0
+*RES
+1 wbs_dat_i[15] *582:7 29.6071 
+2 *582:7 *582:8 267.5 
+3 *582:8 *646:dat[15] 11.4375 
+*END
+
+*D_NET *583 0.0533007
+*CONN
+*P wbs_dat_i[16] I
+*I *646:dat[16] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[16] 0.00165982
+2 *646:dat[16] 9.74745e-05
+3 *583:8 0.0094212
+4 *583:7 0.0109835
+5 *583:7 *611:15 0.000927494
+6 *583:8 *586:8 0.0236603
+7 *583:8 *610:5 0.00605941
+8 *568:14 *583:8 0.00049148
+*RES
+1 wbs_dat_i[16] *583:7 35.0714 
+2 *583:7 *583:8 271.196 
+3 *583:8 *646:dat[16] 5.45536 
+*END
+
+*D_NET *584 0.0618475
+*CONN
+*P wbs_dat_i[17] I
+*I *646:dat[17] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[17] 0.000173893
+2 *646:dat[17] 0.00191912
+3 *584:8 0.00717501
+4 *584:7 0.00542978
+5 *584:8 *591:8 0.019022
+6 *584:8 *608:10 0.00122116
+7 *569:8 *584:8 0.00389881
+8 *581:8 *584:8 0.0230078
+*RES
+1 wbs_dat_i[17] *584:7 7.14286 
+2 *584:7 *584:8 274.482 
+3 *584:8 *646:dat[17] 33.0804 
+*END
+
+*D_NET *585 0.0678814
+*CONN
+*P wbs_dat_i[18] I
+*I *646:dat[18] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[18] 0.00155285
+2 *646:dat[18] 0.000502349
+3 *585:8 0.00547402
+4 *585:7 0.00652453
+5 *585:8 *592:8 0.0193482
+6 *585:8 *611:10 0.00556084
+7 *124:16 *585:8 0.00557333
+8 *132:10 *585:8 0
+9 *582:8 *585:8 0.0233453
+*RES
+1 wbs_dat_i[18] *585:7 29.9107 
+2 *585:7 *585:8 276.946 
+3 *585:8 *646:dat[18] 10.7232 
+*END
+
+*D_NET *586 0.0714361
+*CONN
+*P wbs_dat_i[19] I
+*I *646:dat[19] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[19] 0.0018881
+2 *646:dat[19] 0.000154582
+3 *586:8 0.00506683
+4 *586:7 0.00680035
+5 *586:7 *646:dat[4] 0
+6 *586:8 *589:8 0.0262225
+7 *586:8 *614:10 0.00675758
+8 *568:14 *586:8 0.000885848
+9 *583:8 *586:8 0.0236603
+*RES
+1 wbs_dat_i[19] *586:7 34.7679 
+2 *586:7 *586:8 279.821 
+3 *586:8 *646:dat[19] 6.27679 
+*END
+
+*D_NET *587 0.0478569
+*CONN
+*P wbs_dat_i[1] I
+*I *646:dat[1] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[1] 0.000816931
+2 *646:dat[1] 0.000602397
+3 *587:14 0.00488868
+4 *587:13 0.00452878
+5 *587:8 0.00249677
+6 *587:7 0.0030712
+7 *646:dat[1] wbs_dat_o[15] 0.000232064
+8 *587:8 *630:10 0.00063369
+9 *587:14 *630:10 0
+10 *646:rst *587:8 0
+11 *125:10 *587:14 0.00332373
+12 *541:8 *587:8 0.00244251
+13 *542:10 *587:8 0.00026805
+14 *570:12 *587:14 0.00118198
+15 *575:8 *587:8 0.0054335
+16 *576:8 *587:8 0.00153037
+17 *576:14 *587:14 0.0142547
+18 *579:8 *587:14 0.00215146
+19 *582:7 *646:dat[1] 0
+*RES
+1 wbs_dat_i[1] *587:7 19.8929 
+2 *587:7 *587:8 87.6071 
+3 *587:8 *587:13 13.6786 
+4 *587:13 *587:14 154.143 
+5 *587:14 *646:dat[1] 15.3661 
+*END
+
+*D_NET *588 0.0596305
+*CONN
+*P wbs_dat_i[20] I
+*I *646:dat[20] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[20] 0.00114186
+2 *646:dat[20] 0.00090928
+3 *588:8 0.00802606
+4 *588:7 0.00825864
+5 *646:dat[20] *590:13 9.25014e-06
+6 *588:7 *646:dat[5] 9.89733e-05
+7 *588:8 *594:8 0.0199704
+8 *588:8 *630:10 0
+9 *125:10 *588:8 0.00345518
+10 *556:8 *588:8 0.00347851
+11 *570:12 *588:8 0.000320985
+12 *579:8 *588:8 0.0139614
+*RES
+1 wbs_dat_i[20] *588:7 23.8393 
+2 *588:7 *588:8 282.696 
+3 *588:8 *646:dat[20] 17.2054 
+*END
+
+*D_NET *589 0.072158
+*CONN
+*P wbs_dat_i[21] I
+*I *646:dat[21] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[21] 0.00189568
+2 *646:dat[21] 0.000148036
+3 *589:8 0.00490382
+4 *589:7 0.00665146
+5 *589:7 *646:dat[6] 0
+6 *589:8 *593:8 0.0234951
+7 *589:8 *614:10 0.00636103
+8 *568:14 *589:8 0.00248039
+9 *586:8 *589:8 0.0262225
+*RES
+1 wbs_dat_i[21] *589:7 34.4643 
+2 *589:7 *589:8 285.982 
+3 *589:8 *646:dat[21] 6.58036 
+*END
+
+*D_NET *590 0.0645599
+*CONN
+*P wbs_dat_i[22] I
+*I *646:dat[22] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[22] 0.000392183
+2 *646:dat[22] 0.000884666
+3 *590:16 0.00209967
+4 *590:13 0.00206613
+5 *590:8 0.00927844
+6 *590:7 0.0088195
+7 *590:8 *596:8 0.0166486
+8 *590:16 *594:8 0.00398885
+9 *590:16 *630:10 0
+10 *646:dat[20] *590:13 9.25014e-06
+11 *125:10 *590:16 0.000561322
+12 *552:8 *590:8 0.0115434
+13 *577:8 *590:8 0.00659475
+14 *578:8 *590:8 0.00110521
+15 *580:8 *590:8 0.000567846
+*RES
+1 wbs_dat_i[22] *590:7 11.3929 
+2 *590:7 *590:8 251.482 
+3 *590:8 *590:13 21.5714 
+4 *590:13 *590:16 42 
+5 *590:16 *646:dat[22] 12.7054 
+*END
+
+*D_NET *591 0.064487
+*CONN
+*P wbs_dat_i[23] I
+*I *646:dat[23] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[23] 0.000162579
+2 *646:dat[23] 0.00194793
+3 *591:8 0.0081897
+4 *591:7 0.00640435
+5 *591:8 *597:8 0.0209459
+6 *591:8 *608:10 0.002268
+7 *569:8 *591:8 0.0055466
+8 *584:8 *591:8 0.019022
+*RES
+1 wbs_dat_i[23] *591:7 6.83929 
+2 *591:7 *591:8 291.732 
+3 *591:8 *646:dat[23] 34.2054 
+*END
+
+*D_NET *592 0.0738745
+*CONN
+*P wbs_dat_i[24] I
+*I *646:dat[24] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[24] 0.00162777
+2 *646:dat[24] 0.000474191
+3 *592:8 0.00645696
+4 *592:7 0.00761054
+5 *592:7 *620:10 0
+6 *592:8 *611:10 0.0313655
+7 *124:16 *592:8 0.00699131
+8 *132:10 *592:8 0
+9 *585:8 *592:8 0.0193482
+*RES
+1 wbs_dat_i[24] *592:7 30.2143 
+2 *592:7 *592:8 295.018 
+3 *592:8 *646:dat[24] 10.8304 
+*END
+
+*D_NET *593 0.0750998
+*CONN
+*P wbs_dat_i[25] I
+*I *646:dat[25] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[25] 0.00189767
+2 *646:dat[25] 0.00014696
+3 *593:8 0.00551889
+4 *593:7 0.0072696
+5 *593:7 *617:15 0.000105089
+6 *593:8 *595:8 0.0281376
+7 *593:8 *614:10 0.00670032
+8 *568:14 *593:8 0.00182855
+9 *589:8 *593:8 0.0234951
+*RES
+1 wbs_dat_i[25] *593:7 34.1607 
+2 *593:7 *593:8 297.893 
+3 *593:8 *646:dat[25] 6.88393 
+*END
+
+*D_NET *594 0.0759999
+*CONN
+*P wbs_dat_i[26] I
+*I *646:dat[26] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[26] 0.00111497
+2 *646:dat[26] 0.000834522
+3 *594:8 0.00614088
+4 *594:7 0.00642133
+5 *594:8 *618:10 0.0313296
+6 *594:8 *630:10 0
+7 *646:dat[10] *594:7 0.000291849
+8 *125:10 *594:8 0.0055211
+9 *556:8 *594:8 0.000386371
+10 *588:8 *594:8 0.0199704
+11 *590:16 *594:8 0.00398885
+*RES
+1 wbs_dat_i[26] *594:7 24.1429 
+2 *594:7 *594:8 301.179 
+3 *594:8 *646:dat[26] 16.9018 
+*END
+
+*D_NET *595 0.0811923
+*CONN
+*P wbs_dat_i[27] I
+*I *646:dat[27] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[27] 0.0019326
+2 *646:dat[27] 7.16261e-05
+3 *595:8 0.00476327
+4 *595:7 0.00662425
+5 *595:8 *614:10 0.00737754
+6 *646:dat[11] *595:7 0
+7 *568:14 *595:8 0.0322854
+8 *593:8 *595:8 0.0281376
+*RES
+1 wbs_dat_i[27] *595:7 33.8571 
+2 *595:7 *595:8 305.491 
+3 *595:8 *646:dat[27] 5.625 
+*END
+
+*D_NET *596 0.072795
+*CONN
+*P wbs_dat_i[28] I
+*I *646:dat[28] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[28] 0.000434701
+2 *646:dat[28] 0.00083139
+3 *596:16 0.00205284
+4 *596:13 0.00205258
+5 *596:8 0.00673197
+6 *596:7 0.00633554
+7 *596:8 *600:8 0.0239198
+8 *596:16 *618:10 0.00207822
+9 *596:16 *630:10 0
+10 *125:10 *596:16 0.0005239
+11 *552:8 *596:8 0.0087204
+12 *561:8 *596:8 0.000756358
+13 *567:8 *596:8 0.000308528
+14 *580:8 *596:8 0.00140018
+15 *590:8 *596:8 0.0166486
+*RES
+1 wbs_dat_i[28] *596:7 11.6964 
+2 *596:7 *596:8 272.429 
+3 *596:8 *596:13 21.2679 
+4 *596:13 *596:16 39.5357 
+5 *596:16 *646:dat[28] 12.7054 
+*END
+
+*D_NET *597 0.0745896
+*CONN
+*P wbs_dat_i[29] I
+*I *646:dat[29] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[29] 0.000153867
+2 *646:dat[29] 0.00192879
+3 *597:8 0.00801365
+4 *597:7 0.00623873
+5 *597:8 *608:10 0.00429107
+6 *569:8 *597:8 0.0330176
+7 *591:8 *597:8 0.0209459
+*RES
+1 wbs_dat_i[29] *597:7 6.53571 
+2 *597:7 *597:8 310.214 
+3 *597:8 *646:dat[29] 34.5089 
+*END
+
+*D_NET *598 0.0613172
+*CONN
+*P wbs_dat_i[2] I
+*I *646:dat[2] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[2] 0.00144196
+2 *646:dat[2] 0.000311861
+3 *598:8 0.00525738
+4 *598:7 0.00638747
+5 *598:8 *601:8 0.0230022
+6 *598:8 *604:8 0.0174542
+7 *124:16 *598:8 0.00746213
+8 *543:8 *598:8 0
+*RES
+1 wbs_dat_i[2] *598:7 31.125 
+2 *598:7 *598:8 239.161 
+3 *598:8 *646:dat[2] 9.09821 
+*END
+
+*D_NET *599 0.0643215
+*CONN
+*P wbs_dat_i[30] I
+*I *646:dat[30] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[30] 0.00211528
+2 *646:dat[30] 0
+3 *599:8 0.0126565
+4 *599:7 0.0147718
+5 *599:8 *620:5 0.0347779
+*RES
+1 wbs_dat_i[30] *599:7 35.0439 
+2 *599:7 *599:8 55.2861 
+3 *599:8 *646:dat[30] 3.41 
+*END
+
+*D_NET *600 0.0826392
+*CONN
+*P wbs_dat_i[31] I
+*I *646:dat[31] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[31] 0.00045971
+2 *646:dat[31] 0.00156161
+3 *600:8 0.00733426
+4 *600:7 0.00623236
+5 *552:8 *600:8 0.00932978
+6 *567:8 *600:8 0.0338017
+7 *596:8 *600:8 0.0239198
+*RES
+1 wbs_dat_i[31] *600:7 12 
+2 *600:7 *600:8 317.607 
+3 *600:8 *646:dat[31] 27.8125 
+*END
+
+*D_NET *601 0.062818
+*CONN
+*P wbs_dat_i[3] I
+*I *646:dat[3] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[3] 0.00146945
+2 *646:dat[3] 0.000319061
+3 *601:8 0.00386367
+4 *601:7 0.00501406
+5 *601:8 *602:8 0.0227466
+6 *601:8 *604:8 0.00107177
+7 *124:16 *601:8 0.00222355
+8 *141:10 *601:8 0.00310772
+9 *543:8 *601:8 0
+10 *598:8 *601:8 0.0230022
+*RES
+1 wbs_dat_i[3] *601:7 31.4286 
+2 *601:7 *601:8 236.286 
+3 *601:8 *646:dat[3] 9.20536 
+*END
+
+*D_NET *602 0.0490071
+*CONN
+*P wbs_dat_i[4] I
+*I *646:dat[4] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[4] 0.00148966
+2 *646:dat[4] 0.000331192
+3 *602:8 0.00525971
+4 *602:7 0.00641817
+5 *602:8 *604:8 0.000722933
+6 *124:16 *602:8 0.00162711
+7 *141:10 *602:8 0.00325895
+8 *543:8 *602:8 0.000604161
+9 *544:8 *602:8 0.00555362
+10 *553:8 *602:8 9.7497e-05
+11 *573:8 *602:8 0.000897502
+12 *586:7 *646:dat[4] 0
+13 *601:8 *602:8 0.0227466
+*RES
+1 wbs_dat_i[4] *602:7 31.7321 
+2 *602:7 *602:8 233.821 
+3 *602:8 *646:dat[4] 9.3125 
+*END
+
+*D_NET *603 0.0405467
+*CONN
+*P wbs_dat_i[5] I
+*I *646:dat[5] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[5] 0.000362788
+2 *646:dat[5] 0.000944898
+3 *603:16 0.00237955
+4 *603:8 0.00956716
+5 *603:7 0.0084953
+6 *603:8 *605:8 0.00146084
+7 *603:16 wbs_dat_o[18] 0
+8 *603:16 *630:10 0.0023651
+9 *552:8 *603:8 0.000487702
+10 *553:7 *603:16 0
+11 *577:8 *603:8 0.0143844
+12 *579:8 *603:16 0
+13 *588:7 *646:dat[5] 9.89733e-05
+*RES
+1 wbs_dat_i[5] *603:7 11.3929 
+2 *603:7 *603:8 214.518 
+3 *603:8 *603:16 46.25 
+4 *603:16 *646:dat[5] 14.8304 
+*END
+
+*D_NET *604 0.0541176
+*CONN
+*P wbs_dat_i[6] I
+*I *646:dat[6] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[6] 0.00145064
+2 *646:dat[6] 0.000449957
+3 *604:8 0.00690949
+4 *604:7 0.00791017
+5 *604:8 *611:10 0.00855901
+6 *124:16 *604:8 0.00827734
+7 *553:8 *604:8 0.000147806
+8 *555:8 *604:8 0.000654013
+9 *582:8 *604:8 0.000510254
+10 *589:7 *646:dat[6] 0
+11 *598:8 *604:8 0.0174542
+12 *601:8 *604:8 0.00107177
+13 *602:8 *604:8 0.000722933
+*RES
+1 wbs_dat_i[6] *604:7 30.8214 
+2 *604:7 *604:8 239.982 
+3 *604:8 *646:dat[6] 10.2232 
+*END
+
+*D_NET *605 0.0492689
+*CONN
+*P wbs_dat_i[7] I
+*I *646:dat[7] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[7] 0.000444794
+2 *646:dat[7] 0.00144717
+3 *605:8 0.00743136
+4 *605:7 0.00642899
+5 *646:dat[7] wbs_dat_o[22] 0.000532776
+6 *545:8 *605:8 0
+7 *546:8 *605:8 0
+8 *547:8 *605:8 0.000190996
+9 *548:8 *605:8 0.000476932
+10 *549:8 *605:8 0.00066408
+11 *550:8 *605:8 0.000914796
+12 *551:8 *605:8 0.00958936
+13 *552:8 *605:8 0.00145176
+14 *554:8 *605:8 0
+15 *577:8 *605:8 0.000658896
+16 *578:8 *605:8 0.00184175
+17 *580:8 *605:8 0.0157344
+18 *603:8 *605:8 0.00146084
+*RES
+1 wbs_dat_i[7] *605:7 12.6071 
+2 *605:7 *605:8 243.268 
+3 *605:8 *646:dat[7] 28.0268 
+*END
+
+*D_NET *606 0.0513762
+*CONN
+*P wbs_dat_i[8] I
+*I *646:dat[8] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[8] 0.000102784
+2 *646:dat[8] 0.00217832
+3 *606:10 0.00891358
+4 *606:9 0.00683804
+5 *646:dat[8] wbs_dat_o[23] 0
+6 *606:10 *607:10 0.0245907
+7 *606:10 *608:10 0.000757939
+8 *606:10 *609:10 0.001074
+9 *606:10 *612:10 0.00145133
+10 *606:10 *616:10 0.00238635
+11 *558:10 *606:10 0.000370246
+12 *565:8 *606:10 0
+13 *574:10 *606:10 0.0027129
+*RES
+1 wbs_dat_i[8] *606:9 6.48214 
+2 *606:9 *606:10 244.5 
+3 *606:10 *646:dat[8] 37.2411 
+*END
+
+*D_NET *607 0.0568125
+*CONN
+*P wbs_dat_i[9] I
+*I *646:dat[9] I *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_i[9] 8.90955e-05
+2 *646:dat[9] 0.00220384
+3 *607:10 0.0103964
+4 *607:9 0.00828163
+5 *646:dat[9] *617:15 0
+6 *607:10 *608:10 0.000537573
+7 *607:10 *609:10 0.00186725
+8 *607:10 *612:10 0.00312999
+9 *607:10 *616:10 0.00517674
+10 *558:10 *607:10 4.52037e-05
+11 *559:10 *607:10 0.000422491
+12 *560:10 *607:10 7.15846e-05
+13 *606:10 *607:10 0.0245907
+*RES
+1 wbs_dat_i[9] *607:9 5.66071 
+2 *607:9 *607:10 249.839 
+3 *607:10 *646:dat[9] 37.5446 
+*END
+
+*D_NET *608 0.353059
+*CONN
+*P wbs_dat_o[0] O
+*I *646:dout[0] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[0] 8.52719e-05
+2 *646:dout[0] 0.00180834
+3 *608:10 0.0633567
+4 *608:9 0.0650798
+5 *608:10 *609:10 0.14264
+6 *565:8 *608:10 0.0226938
+7 *569:8 *608:10 0.0102777
+8 *571:8 *608:10 0.0183586
+9 *574:10 *608:10 0.018932
+10 *581:8 *608:10 0.000750392
+11 *584:8 *608:10 0.00122116
+12 *591:8 *608:10 0.002268
+13 *597:8 *608:10 0.00429107
+14 *606:10 *608:10 0.000757939
+15 *607:10 *608:10 0.000537573
+*RES
+1 *646:dout[0] *608:9 34.3743 
+2 *608:9 *608:10 254.082 
+3 *608:10 wbs_dat_o[0] 5.02607 
+*END
+
+*D_NET *609 0.40646
+*CONN
+*P wbs_dat_o[10] O
+*I *646:dout[10] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[10] 0.000175147
+2 *646:dout[10] 0.00180031
+3 *609:10 0.0283041
+4 *609:9 0.0299293
+5 *609:10 *612:10 0.158577
+6 *558:10 *609:10 0.0218688
+7 *559:10 *609:10 0.020224
+8 *606:10 *609:10 0.001074
+9 *607:10 *609:10 0.00186725
+10 *608:10 *609:10 0.14264
+*RES
+1 *646:dout[10] *609:9 35.3921 
+2 *609:9 *609:10 255.235 
+3 *609:10 wbs_dat_o[10] 5.11536 
+*END
+
+*D_NET *610 0.378949
+*CONN
+*P wbs_dat_o[11] O
+*I *646:dout[11] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[11] 0.00182303
+2 *646:dout[11] 0
+3 *610:5 0.0387447
+4 *610:4 0.0369217
+5 *610:5 *614:10 0.153984
+6 *610:5 *620:5 0.139158
+7 *139:10 *610:5 0.00225763
+8 *583:8 *610:5 0.00605941
+*RES
+1 *646:dout[11] *610:4 3.41 
+2 *610:4 *610:5 256.208 
+3 *610:5 wbs_dat_o[11] 34.4904 
+*END
+
+*D_NET *611 0.30793
+*CONN
+*P wbs_dat_o[12] O
+*I *646:dout[12] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[12] 0.00080908
+2 *646:dout[12] 0.000281774
+3 *611:16 0.00240831
+4 *611:15 0.00209555
+5 *611:10 0.0385421
+6 *611:9 0.0383275
+7 *611:10 *615:10 0.139692
+8 *611:16 *619:16 0.00621808
+9 *611:16 *639:10 0.000613283
+10 *124:16 *611:10 0.0312023
+11 *132:10 *611:10 0
+12 *555:8 *611:10 1.94888e-05
+13 *582:8 *611:10 0.0013078
+14 *583:7 *611:15 0.000927494
+15 *585:8 *611:10 0.00556084
+16 *592:8 *611:10 0.0313655
+17 *604:8 *611:10 0.00855901
+*RES
+1 *646:dout[12] *611:9 9.29464 
+2 *611:9 *611:10 1404.77 
+3 *611:10 *611:15 20.9643 
+4 *611:15 *611:16 58.8571 
+5 *611:16 wbs_dat_o[12] 18.6786 
+*END
+
+*D_NET *612 0.42097
+*CONN
+*P wbs_dat_o[13] O
+*I *646:dout[13] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[13] 0.000141607
+2 *646:dout[13] 0.00177943
+3 *612:10 0.0257118
+4 *612:9 0.0273496
+5 *612:10 *616:10 0.157879
+6 *560:10 *612:10 0.0236105
+7 *563:10 *612:10 0.0213397
+8 *606:10 *612:10 0.00145133
+9 *607:10 *612:10 0.00312999
+10 *609:10 *612:10 0.158577
+*RES
+1 *646:dout[13] *612:9 35.1779 
+2 *612:9 *612:10 256.965 
+3 *612:10 wbs_dat_o[13] 5.11536 
+*END
+
+*D_NET *613 0.30759
+*CONN
+*P wbs_dat_o[14] O
+*I *646:dout[14] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[14] 0.000694075
+2 *646:dout[14] 0.00124795
+3 *613:16 0.0031517
+4 *613:15 0.00254252
+5 *613:10 0.0415612
+6 *613:9 0.0427243
+7 *613:10 *617:10 0.14639
+8 *613:10 *617:16 0.00162004
+9 *613:10 *618:16 0.000386844
+10 *613:10 *623:10 0
+11 *613:10 *627:10 0
+12 *613:10 *628:10 0
+13 *613:10 *631:10 0
+14 *613:10 *632:10 0.0263274
+15 *613:15 wbs_dat_o[19] 0
+16 *613:16 *617:16 0.00199835
+17 *613:16 *618:16 9.23666e-05
+18 *613:16 *634:10 0.000822041
+19 *545:8 *613:10 0.00164901
+20 *546:8 *613:10 0.00177816
+21 *547:8 *613:10 0.00162004
+22 *548:8 *613:10 0.000740393
+23 *552:8 *613:10 0.0018615
+24 *554:8 *613:10 0.0115912
+25 *555:7 *613:15 0
+26 *572:8 *613:10 0.0151208
+27 *572:8 *613:16 0.0036697
+*RES
+1 *646:dout[14] *613:9 24.66 
+2 *613:9 *613:10 243.272 
+3 *613:10 *613:15 9.0975 
+4 *613:15 *613:16 82.6786 
+5 *613:16 wbs_dat_o[14] 15.9464 
+*END
+
+*D_NET *614 0.347089
+*CONN
+*P wbs_dat_o[15] O
+*I *646:dout[15] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[15] 0.00171749
+2 *646:dout[15] 0.000113647
+3 *614:10 0.0377249
+4 *614:9 0.036121
+5 *614:10 *620:5 0.00434484
+6 *646:dat[1] wbs_dat_o[15] 0.000232064
+7 *139:10 *614:10 0.0856546
+8 *586:8 *614:10 0.00675758
+9 *589:8 *614:10 0.00636103
+10 *593:8 *614:10 0.00670032
+11 *595:8 *614:10 0.00737754
+12 *610:5 *614:10 0.153984
+*RES
+1 *646:dout[15] *614:9 5.64214 
+2 *614:9 *614:10 258.19 
+3 *614:10 wbs_dat_o[15] 33.2225 
+*END
+
+*D_NET *615 0.351945
+*CONN
+*P wbs_dat_o[16] O
+*I *646:dout[16] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[16] 0.000854289
+2 *646:dout[16] 0.00031613
+3 *615:16 0.00281861
+4 *615:15 0.00273298
+5 *615:10 0.0260585
+6 *615:9 0.0256059
+7 *615:10 *619:10 0.105461
+8 *615:15 wbs_dat_o[21] 5.24228e-05
+9 *615:16 *619:16 0.00824403
+10 *615:16 *620:11 0.0015691
+11 *615:16 *639:10 0.000655008
+12 *124:16 *615:10 0.0328986
+13 *555:8 *615:10 0.000170373
+14 *557:8 *615:10 0.00309441
+15 *562:8 *615:10 0.0017219
+16 *611:10 *615:10 0.139692
+*RES
+1 *646:dout[16] *615:9 10.2232 
+2 *615:9 *615:10 1396.14 
+3 *615:10 *615:15 21.2679 
+4 *615:15 *615:16 78.1607 
+5 *615:16 wbs_dat_o[16] 18.6786 
+*END
+
+*D_NET *616 0.346353
+*CONN
+*P wbs_dat_o[17] O
+*I *646:dout[17] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[17] 0.000156165
+2 *646:dout[17] 0.0017665
+3 *616:10 0.0559042
+4 *616:9 0.0575145
+5 *564:10 *616:10 0.0232549
+6 *566:10 *616:10 0.0423146
+7 *606:10 *616:10 0.00238635
+8 *607:10 *616:10 0.00517674
+9 *612:10 *616:10 0.157879
+*RES
+1 *646:dout[17] *616:9 35.3743 
+2 *616:9 *616:10 259.199 
+3 *616:10 wbs_dat_o[17] 5.11536 
+*END
+
+*D_NET *617 0.372591
+*CONN
+*P wbs_dat_o[18] O
+*I *646:dout[18] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[18] 0.000697279
+2 *646:dout[18] 0.00128218
+3 *617:16 0.00341322
+4 *617:15 0.00280188
+5 *617:10 0.042783
+6 *617:9 0.0439792
+7 *617:10 *632:10 0
+8 *617:16 *618:16 0.000887559
+9 *646:dat[9] *617:15 0
+10 *545:8 *617:10 0.0153344
+11 *546:8 *617:10 0.0146542
+12 *547:8 *617:10 0.0150877
+13 *548:8 *617:10 0.0167673
+14 *549:8 *617:10 0.015693
+15 *550:8 *617:10 0.0135292
+16 *552:8 *617:10 0.0238356
+17 *561:8 *617:10 0.000645931
+18 *572:8 *617:16 0.0110851
+19 *593:7 *617:15 0.000105089
+20 *603:16 wbs_dat_o[18] 0
+21 *613:10 *617:10 0.14639
+22 *613:10 *617:16 0.00162004
+23 *613:16 *617:16 0.00199835
+*RES
+1 *646:dout[18] *617:9 25.6779 
+2 *617:9 *617:10 241.326 
+3 *617:10 *617:15 9.40107 
+4 *617:15 *617:16 105.268 
+5 *617:16 wbs_dat_o[18] 15.6429 
+*END
+
+*D_NET *618 0.284985
+*CONN
+*P wbs_dat_o[19] O
+*I *646:dout[19] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[19] 0.000776156
+2 *646:dout[19] 0.00070515
+3 *618:16 0.00403484
+4 *618:15 0.00372967
+5 *618:10 0.0411599
+6 *618:9 0.0413941
+7 *618:10 *630:10 0
+8 *618:15 wbs_dat_o[26] 3.32662e-05
+9 *618:16 *634:10 0.0118247
+10 *125:10 *618:10 0.0373481
+11 *142:12 *618:10 0.0235947
+12 *556:8 *618:10 0.08561
+13 *562:7 *618:15 0
+14 *572:8 *618:16 0
+15 *594:8 *618:10 0.0313296
+16 *596:16 *618:10 0.00207822
+17 *613:10 *618:16 0.000386844
+18 *613:15 wbs_dat_o[19] 0
+19 *613:16 *618:16 9.23666e-05
+20 *617:16 *618:16 0.000887559
+*RES
+1 *646:dout[19] *618:9 16.5982 
+2 *618:9 *618:10 1371.5 
+3 *618:10 *618:15 16.4107 
+4 *618:15 *618:16 112.25 
+5 *618:16 wbs_dat_o[19] 17.1607 
+*END
+
+*D_NET *619 0.350243
+*CONN
+*P wbs_dat_o[1] O
+*I *646:dout[1] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[1] 0.000693476
+2 *646:dout[1] 0.000284028
+3 *619:16 0.00941884
+4 *619:15 0.00959991
+5 *619:10 0.0158537
+6 *619:9 0.0152632
+7 *619:15 wbs_dat_o[28] 0
+8 *619:16 *620:11 0.0023355
+9 *619:16 *622:10 0.000213064
+10 *619:16 *624:10 0.000601919
+11 *619:16 *625:10 0.000918289
+12 *619:16 *626:10 0.00373116
+13 *619:16 *627:10 0.000230758
+14 *619:16 *633:10 0.00146067
+15 *619:16 *635:10 0.0388358
+16 *619:16 *636:10 0
+17 *619:16 *637:10 0
+18 *619:16 *638:10 0
+19 *619:16 *639:10 0
+20 *646:dat[12] *619:15 0
+21 *124:16 *619:10 0.0242768
+22 *542:10 *619:16 0.010855
+23 *562:8 *619:10 0.093437
+24 *568:10 *619:16 0.00231041
+25 *611:16 *619:16 0.00621808
+26 *615:10 *619:10 0.105461
+27 *615:16 *619:16 0.00824403
+*RES
+1 *646:dout[1] *619:9 9.50893 
+2 *619:9 *619:10 997.75 
+3 *619:10 *619:15 21.875 
+4 *619:15 *619:16 446.982 
+5 *619:16 wbs_dat_o[1] 18.375 
+*END
+
+*D_NET *620 0.299069
+*CONN
+*P wbs_dat_o[20] O
+*I *646:dout[20] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[20] 0.000924913
+2 *646:dout[20] 0
+3 *620:11 0.0020912
+4 *620:10 0.00227464
+5 *620:5 0.0539637
+6 *620:4 0.0528554
+7 *620:11 *621:10 0.000623244
+8 *620:11 *622:10 0.00137223
+9 *620:11 *639:10 0.000427747
+10 *139:10 *620:5 0.00234988
+11 *592:7 *620:10 0
+12 *599:8 *620:5 0.0347779
+13 *610:5 *620:5 0.139158
+14 *614:10 *620:5 0.00434484
+15 *615:16 *620:11 0.0015691
+16 *619:16 *620:11 0.0023355
+*RES
+1 *646:dout[20] *620:4 3.41 
+2 *620:4 *620:5 251.38 
+3 *620:5 *620:10 24.5796 
+4 *620:10 *620:11 55.5714 
+5 *620:11 wbs_dat_o[20] 18.9821 
+*END
+
+*D_NET *621 0.373432
+*CONN
+*P wbs_dat_o[21] O
+*I *646:dout[21] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[21] 0.00095239
+2 *646:dout[21] 0.00093777
+3 *621:10 0.0244431
+4 *621:9 0.0244285
+5 *621:10 *622:10 0.155784
+6 *621:10 *623:10 0.00110756
+7 *621:10 *627:10 0.0315985
+8 *621:10 *639:10 0.133504
+9 *615:15 wbs_dat_o[21] 5.24228e-05
+10 *620:11 *621:10 0.000623244
+*RES
+1 *646:dout[21] *621:9 21.1518 
+2 *621:9 *621:10 1489.79 
+3 *621:10 wbs_dat_o[21] 19.8929 
+*END
+
+*D_NET *622 0.390535
+*CONN
+*P wbs_dat_o[22] O
+*I *646:dout[22] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[22] 0.000808475
+2 *646:dout[22] 0.000956694
+3 *622:10 0.0204657
+4 *622:9 0.0206139
+5 *622:10 *623:10 0.000916506
+6 *622:10 *624:10 0.154447
+7 *622:10 *627:10 0.000350335
+8 *622:10 *628:10 0.0340733
+9 *646:dat[7] wbs_dat_o[22] 0.000532776
+10 *619:16 *622:10 0.000213064
+11 *620:11 *622:10 0.00137223
+12 *621:10 *622:10 0.155784
+*RES
+1 *646:dout[22] *622:9 21.4554 
+2 *622:9 *622:10 1492.66 
+3 *622:10 wbs_dat_o[22] 19.5893 
+*END
+
+*D_NET *623 0.394963
+*CONN
+*P wbs_dat_o[23] O
+*I *646:dout[23] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[23] 0.00102595
+2 *646:dout[23] 0.000905176
+3 *623:10 0.0647552
+4 *623:9 0.0646345
+5 *623:10 *624:10 0.000507003
+6 *623:10 *625:10 0.000137202
+7 *623:10 *627:10 0.157962
+8 *623:10 *630:10 0.020571
+9 *623:10 *636:10 0.0257012
+10 *623:10 *637:10 0.0287787
+11 *623:10 *638:10 0.0270278
+12 *623:10 *639:10 0.000932894
+13 *646:dat[8] wbs_dat_o[23] 0
+14 *125:10 *623:10 0
+15 *613:10 *623:10 0
+16 *621:10 *623:10 0.00110756
+17 *622:10 *623:10 0.000916506
+*RES
+1 *646:dout[23] *623:9 19.6064 
+2 *623:9 *623:10 262.514 
+3 *623:10 wbs_dat_o[23] 19.2582 
+*END
+
+*D_NET *624 0.389049
+*CONN
+*P wbs_dat_o[24] O
+*I *646:dout[24] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[24] 0.000952049
+2 *646:dout[24] 0.000966615
+3 *624:10 0.0209592
+4 *624:9 0.0209738
+5 *624:10 *625:10 0.1568
+6 *624:10 *627:10 0.000375983
+7 *624:10 *628:10 0.0324655
+8 *619:16 *624:10 0.000601919
+9 *622:10 *624:10 0.154447
+10 *623:10 *624:10 0.000507003
+*RES
+1 *646:dout[24] *624:9 21.7589 
+2 *624:9 *624:10 1498.82 
+3 *624:10 wbs_dat_o[24] 19.2857 
+*END
+
+*D_NET *625 0.393832
+*CONN
+*P wbs_dat_o[25] O
+*I *646:dout[25] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[25] 0.000915864
+2 *646:dout[25] 0.000985539
+3 *625:10 0.0205648
+4 *625:9 0.0206345
+5 *625:10 *626:10 0.157106
+6 *625:10 *627:10 0.00034255
+7 *625:10 *628:10 0.000614171
+8 *625:10 *631:10 0.0348134
+9 *619:16 *625:10 0.000918289
+10 *623:10 *625:10 0.000137202
+11 *624:10 *625:10 0.1568
+*RES
+1 *646:dout[25] *625:9 22.0625 
+2 *625:9 *625:10 1502.11 
+3 *625:10 wbs_dat_o[25] 18.9821 
+*END
+
+*D_NET *626 0.392433
+*CONN
+*P wbs_dat_o[26] O
+*I *646:dout[26] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[26] 0.000886985
+2 *646:dout[26] 0.00100446
+3 *626:10 0.0205479
+4 *626:9 0.0206654
+5 *626:10 *627:10 0.000297777
+6 *626:10 *628:10 0.000660483
+7 *626:10 *629:10 0.154082
+8 *626:10 *631:10 0.0327106
+9 *626:10 *635:10 0.000706125
+10 *618:15 wbs_dat_o[26] 3.32662e-05
+11 *619:16 *626:10 0.00373116
+12 *625:10 *626:10 0.157106
+*RES
+1 *646:dout[26] *626:9 22.3661 
+2 *626:9 *626:10 1504.98 
+3 *626:10 wbs_dat_o[26] 18.6786 
+*END
+
+*D_NET *627 0.450597
+*CONN
+*P wbs_dat_o[27] O
+*I *646:dout[27] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[27] 0.000989848
+2 *646:dout[27] 0.000872616
+3 *627:10 0.0321408
+4 *627:9 0.0320235
+5 *627:10 *628:10 0.164712
+6 *627:10 *635:10 0.000177031
+7 *627:10 *639:10 0.028523
+8 *646:dat[11] wbs_dat_o[27] 0
+9 *125:10 *627:10 0
+10 *613:10 *627:10 0
+11 *619:16 *627:10 0.000230758
+12 *621:10 *627:10 0.0315985
+13 *622:10 *627:10 0.000350335
+14 *623:10 *627:10 0.157962
+15 *624:10 *627:10 0.000375983
+16 *625:10 *627:10 0.00034255
+17 *626:10 *627:10 0.000297777
+*RES
+1 *646:dout[27] *627:9 18.9814 
+2 *627:9 *627:10 264.82 
+3 *627:10 wbs_dat_o[27] 18.6511 
+*END
+
+*D_NET *628 0.462282
+*CONN
+*P wbs_dat_o[28] O
+*I *646:dout[28] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[28] 0.000952019
+2 *646:dout[28] 0.000943392
+3 *628:10 0.0317084
+4 *628:9 0.0316997
+5 *628:10 *629:10 0.000277719
+6 *628:10 *631:10 0.163264
+7 *628:10 *633:10 0.000349248
+8 *628:10 *634:10 0.000181816
+9 *628:10 *635:10 0.000381044
+10 *125:10 *628:10 0
+11 *613:10 *628:10 0
+12 *619:15 wbs_dat_o[28] 0
+13 *622:10 *628:10 0.0340733
+14 *624:10 *628:10 0.0324655
+15 *625:10 *628:10 0.000614171
+16 *626:10 *628:10 0.000660483
+17 *627:10 *628:10 0.164712
+*RES
+1 *646:dout[28] *628:9 19.9993 
+2 *628:9 *628:10 265.324 
+3 *628:10 wbs_dat_o[28] 18.0439 
+*END
+
+*D_NET *629 0.376017
+*CONN
+*P wbs_dat_o[29] O
+*I *646:dout[29] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[29] 0.000900372
+2 *646:dout[29] 0.00100594
+3 *629:10 0.0298514
+4 *629:9 0.0299569
+5 *629:10 *631:10 0.000350314
+6 *629:10 *632:10 0.0474755
+7 *629:10 *635:10 0.112116
+8 *646:dat[13] wbs_dat_o[29] 0
+9 *626:10 *629:10 0.154082
+10 *628:10 *629:10 0.000277719
+*RES
+1 *646:dout[29] *629:9 22.2589 
+2 *629:9 *629:10 1514.43 
+3 *629:10 wbs_dat_o[29] 18.375 
+*END
+
+*D_NET *630 0.26812
+*CONN
+*P wbs_dat_o[2] O
+*I *646:dout[2] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[2] 0.000884111
+2 *646:dout[2] 0.000886657
+3 *630:10 0.0487592
+4 *630:9 0.0487618
+5 *630:10 *636:10 0.144592
+6 *630:10 *645:8 0
+7 *646:rst *630:10 0.000665796
+8 *542:10 *630:10 0
+9 *579:8 *630:10 0
+10 *587:8 *630:10 0.00063369
+11 *587:14 *630:10 0
+12 *588:8 *630:10 0
+13 *590:16 *630:10 0
+14 *594:8 *630:10 0
+15 *596:16 *630:10 0
+16 *603:16 *630:10 0.0023651
+17 *618:10 *630:10 0
+18 *623:10 *630:10 0.020571
+*RES
+1 *646:dout[2] *630:9 19.6339 
+2 *630:9 *630:10 1442.14 
+3 *630:10 wbs_dat_o[2] 21.4107 
+*END
+
+*D_NET *631 0.462561
+*CONN
+*P wbs_dat_o[30] O
+*I *646:dout[30] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[30] 0.000908482
+2 *646:dout[30] 0.00098884
+3 *631:10 0.0314328
+4 *631:9 0.0315131
+5 *631:10 *632:10 0.165563
+6 *631:10 *633:10 0.00034253
+7 *631:10 *634:10 0.00029776
+8 *631:10 *635:10 0.000375961
+9 *613:10 *631:10 0
+10 *625:10 *631:10 0.0348134
+11 *626:10 *631:10 0.0327106
+12 *628:10 *631:10 0.163264
+13 *629:10 *631:10 0.000350314
+*RES
+1 *646:dout[30] *631:9 21.4279 
+2 *631:9 *631:10 266.261 
+3 *631:10 wbs_dat_o[30] 17.4368 
+*END
+
+*D_NET *632 0.41937
+*CONN
+*P wbs_dat_o[31] O
+*I *646:dout[31] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[31] 0.000871046
+2 *646:dout[31] 0.00101768
+3 *632:10 0.048021
+4 *632:9 0.0481677
+5 *632:10 *633:10 0.0224573
+6 *632:10 *634:10 0.0357398
+7 *632:10 *635:10 0.0237295
+8 *613:10 *632:10 0.0263274
+9 *617:10 *632:10 0
+10 *629:10 *632:10 0.0474755
+11 *631:10 *632:10 0.165563
+*RES
+1 *646:dout[31] *632:9 22.035 
+2 *632:9 *632:10 266.766 
+3 *632:10 wbs_dat_o[31] 16.8296 
+*END
+
+*D_NET *633 0.366063
+*CONN
+*P wbs_dat_o[3] O
+*I *646:dout[3] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[3] 0.000690547
+2 *646:dout[3] 0.00117114
+3 *633:10 0.0198902
+4 *633:9 0.0203708
+5 *633:10 *634:10 0.149897
+6 *633:10 *635:10 0.148249
+7 *554:8 *633:10 0
+8 *568:10 *633:10 0.0011847
+9 *619:16 *633:10 0.00146067
+10 *628:10 *633:10 0.000349248
+11 *631:10 *633:10 0.00034253
+12 *632:10 *633:10 0.0224573
+*RES
+1 *646:dout[3] *633:9 23.2768 
+2 *633:9 *633:10 1439.68 
+3 *633:10 wbs_dat_o[3] 17.7679 
+*END
+
+*D_NET *634 0.29052
+*CONN
+*P wbs_dat_o[4] O
+*I *646:dout[4] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[4] 0.000663059
+2 *646:dout[4] 0.00118722
+3 *634:10 0.0441449
+4 *634:9 0.0446691
+5 *634:10 *635:10 0.00109266
+6 *545:8 *634:10 0
+7 *546:8 *634:10 0
+8 *554:8 *634:10 0
+9 *572:8 *634:10 0
+10 *613:16 *634:10 0.000822041
+11 *618:16 *634:10 0.0118247
+12 *628:10 *634:10 0.000181816
+13 *631:10 *634:10 0.00029776
+14 *632:10 *634:10 0.0357398
+15 *633:10 *634:10 0.149897
+*RES
+1 *646:dout[4] *634:9 23.5804 
+2 *634:9 *634:10 1437.62 
+3 *634:10 wbs_dat_o[4] 17.4643 
+*END
+
+*D_NET *635 0.367703
+*CONN
+*P wbs_dat_o[5] O
+*I *646:dout[5] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[5] 0.000711625
+2 *646:dout[5] 0.00114615
+3 *635:10 0.019874
+4 *635:9 0.0203085
+5 *619:16 *635:10 0.0388358
+6 *626:10 *635:10 0.000706125
+7 *627:10 *635:10 0.000177031
+8 *628:10 *635:10 0.000381044
+9 *629:10 *635:10 0.112116
+10 *631:10 *635:10 0.000375961
+11 *632:10 *635:10 0.0237295
+12 *633:10 *635:10 0.148249
+13 *634:10 *635:10 0.00109266
+*RES
+1 *646:dout[5] *635:9 22.9732 
+2 *635:9 *635:10 1440.91 
+3 *635:10 wbs_dat_o[5] 18.0714 
+*END
+
+*D_NET *636 0.365514
+*CONN
+*P wbs_dat_o[6] O
+*I *646:dout[6] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[6] 0.00088215
+2 *646:dout[6] 0.00090135
+3 *636:10 0.0212648
+4 *636:9 0.021284
+5 *636:10 *637:10 0.150888
+6 *542:10 *636:10 0
+7 *619:16 *636:10 0
+8 *623:10 *636:10 0.0257012
+9 *630:10 *636:10 0.144592
+*RES
+1 *646:dout[6] *636:9 19.9375 
+2 *636:9 *636:10 1443.79 
+3 *636:10 wbs_dat_o[6] 21.1071 
+*END
+
+*D_NET *637 0.373159
+*CONN
+*P wbs_dat_o[7] O
+*I *646:dout[7] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[7] 0.000874091
+2 *646:dout[7] 0.00091573
+3 *637:10 0.0202106
+4 *637:9 0.0202523
+5 *637:10 *638:10 0.151239
+6 *619:16 *637:10 0
+7 *623:10 *637:10 0.0287787
+8 *636:10 *637:10 0.150888
+*RES
+1 *646:dout[7] *637:9 20.2411 
+2 *637:9 *637:10 1446.66 
+3 *637:10 wbs_dat_o[7] 20.8036 
+*END
+
+*D_NET *638 0.372151
+*CONN
+*P wbs_dat_o[8] O
+*I *646:dout[8] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[8] 0.000859669
+2 *646:dout[8] 0.000932951
+3 *638:10 0.0202389
+4 *638:9 0.0203121
+5 *638:10 *639:10 0.151541
+6 *619:16 *638:10 0
+7 *623:10 *638:10 0.0270278
+8 *637:10 *638:10 0.151239
+*RES
+1 *646:dout[8] *638:9 20.5446 
+2 *638:9 *638:10 1449.95 
+3 *638:10 wbs_dat_o[8] 20.5 
+*END
+
+*D_NET *639 0.363711
+*CONN
+*P wbs_dat_o[9] O
+*I *646:dout[9] O *D Wishbone_VGA_controller
+*CAP
+1 wbs_dat_o[9] 0.000851239
+2 *646:dout[9] 0.00095182
+3 *639:10 0.0228054
+4 *639:9 0.022906
+5 *611:16 *639:10 0.000613283
+6 *615:16 *639:10 0.000655008
+7 *619:16 *639:10 0
+8 *620:11 *639:10 0.000427747
+9 *621:10 *639:10 0.133504
+10 *623:10 *639:10 0.000932894
+11 *627:10 *639:10 0.028523
+12 *638:10 *639:10 0.151541
+*RES
+1 *646:dout[9] *639:9 20.8482 
+2 *639:9 *639:10 1452.82 
+3 *639:10 wbs_dat_o[9] 20.1964 
+*END
+
+*D_NET *644 0.0280479
+*CONN
+*P wbs_stb_i I
+*I *646:stb I *D Wishbone_VGA_controller
+*CAP
+1 wbs_stb_i 0.000714414
+2 *646:stb 0.00106723
+3 *644:8 0.00253092
+4 *644:7 0.0021781
+5 *542:10 *644:8 0.0111548
+6 *575:8 *644:8 0.000892582
+7 *576:8 *644:8 0.00950989
+*RES
+1 wbs_stb_i *644:7 18.9821 
+2 *644:7 *644:8 105.679 
+3 *644:8 *646:stb 23.9554 
+*END
+
+*D_NET *645 0.022144
+*CONN
+*P wbs_we_i I
+*I *646:we I *D Wishbone_VGA_controller
+*CAP
+1 wbs_we_i 0.00100481
+2 *646:we 0.00165589
+3 *645:8 0.00583132
+4 *645:7 0.00518024
+5 *646:rst *645:8 0
+6 *125:10 *646:we 0.000791531
+7 *125:10 *645:8 0.00308154
+8 *126:10 *646:we 0.000711277
+9 *126:10 *645:8 0.00106246
+10 *570:10 *646:we 0.00163057
+11 *576:14 *646:we 0.00119436
+12 *630:10 *645:8 0
+*RES
+1 wbs_we_i *645:7 24.4464 
+2 *645:7 *645:8 88.2232 
+3 *645:8 *646:we 49.5 
+*END
