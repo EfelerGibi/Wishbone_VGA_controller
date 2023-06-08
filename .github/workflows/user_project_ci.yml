@@ -179,7 +179,7 @@ jobs:
 
       - name: Harden using Openlane
         run: |
-          make user_proj_example
+          make Wishbone_VGA_controller
           make user_project_wrapper
 
       - name: run precheck
